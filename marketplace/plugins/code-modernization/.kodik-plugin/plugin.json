@@ -1,0 +1,16 @@
+{
+  "name": "code-modernization",
+  "description": "Modernize legacy codebases (COBOL, legacy Java/C++, monolith web apps) with a structured assess → map → extract-rules → brief → reimagine/transform → harden workflow and specialist review agents",
+  "author": {
+    "name": "Kodik"
+  },
+  "id": "code-modernization",
+  "originalAuthor": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "sourceMarketplace": {
+    "slug": "claude-official",
+    "url": "https://github.com/anthropics/claude-plugins-official"
+  }
+}

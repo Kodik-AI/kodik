@@ -1,0 +1,16 @@
+{
+  "name": "feature-dev",
+  "description": "Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review",
+  "author": {
+    "name": "Kodik"
+  },
+  "id": "feature-dev",
+  "originalAuthor": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "sourceMarketplace": {
+    "slug": "claude-official",
+    "url": "https://github.com/anthropics/claude-plugins-official"
+  }
+}

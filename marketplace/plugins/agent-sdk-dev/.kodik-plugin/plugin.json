@@ -1,0 +1,16 @@
+{
+  "name": "agent-sdk-dev",
+  "description": "your AI assistant Agent SDK Development Plugin",
+  "author": {
+    "name": "Kodik"
+  },
+  "id": "agent-sdk-dev",
+  "originalAuthor": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "sourceMarketplace": {
+    "slug": "claude-official",
+    "url": "https://github.com/anthropics/claude-plugins-official"
+  }
+}

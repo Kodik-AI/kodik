@@ -1,0 +1,24 @@
+{
+  "servers": {
+    "slack": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-slack"
+      ],
+      "env": {
+        "SLACK_BOT_TOKEN": "${env:SLACK_BOT_TOKEN}",
+        "SLACK_TEAM_ID": "${env:SLACK_TEAM_ID}"
+      },
+      "disabled": true
+    }
+  },
+  "meta": {
+    "slack": {
+      "id": "slack-mcp",
+      "title": "slack",
+      "description": "Community MCP server for slack. Set the required env vars and flip disabled to false."
+    }
+  }
+}

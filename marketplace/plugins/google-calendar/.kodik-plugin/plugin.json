@@ -1,0 +1,52 @@
+{
+  "name": "google-calendar",
+  "version": "1.2.0",
+  "description": "Connect Google Calendar for scheduling, availability, daily briefs, and event management.",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepage": "https://workspace.google.com/products/calendar/",
+  "repository": "https://github.com/openai/plugins",
+  "license": "MIT",
+  "keywords": [
+    "google-calendar",
+    "calendar",
+    "agenda",
+    "daily-brief",
+    "scheduling",
+    "productivity"
+  ],
+  "skills": "./skills/",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "Google Calendar",
+    "shortDescription": "Manage Google Calendar events and schedules",
+    "longDescription": "Use Google Calendar to summarize a day, check availability, list calendars, and create, update, or delete events directly from task prompts.",
+    "developerName": "OpenAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://workspace.google.com/products/calendar/",
+    "privacyPolicyURL": "https://policies.google.com/privacy",
+    "termsOfServiceURL": "https://policies.google.com/terms",
+    "defaultPrompt": [
+      "Summarize my calendar, compare availability, prep meetings, or draft event details"
+    ],
+    "brandColor": "#4285F4",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "id": "google-calendar",
+  "originalAuthor": {
+    "name": "OpenAI",
+    "email": "support@openai.com",
+    "url": "https://openai.com/"
+  },
+  "sourceMarketplace": {
+    "slug": "openai-codex",
+    "url": "https://github.com/openai/plugins"
+  }
+}

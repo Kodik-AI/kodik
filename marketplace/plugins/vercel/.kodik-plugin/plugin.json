@@ -1,0 +1,61 @@
+{
+  "name": "vercel",
+  "version": "0.21.0",
+  "description": "Build and deploy web apps and agents",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepage": "https://vercel.com/",
+  "repository": "https://github.com/vercel/vercel-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "vercel",
+    "nextjs",
+    "ai-sdk",
+    "turborepo",
+    "turbopack",
+    "workflow",
+    "deployment",
+    "edge-functions",
+    "serverless",
+    "ai-gateway",
+    "chat-sdk",
+    "chat-bot",
+    "slack-bot",
+    "discord-bot"
+  ],
+  "skills": "./skills/",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "Vercel",
+    "shortDescription": "Build and deploy web apps and agents",
+    "longDescription": "Bring Vercel ecosystem guidance into Codex with curated skills and the connected Vercel app. Packages the upstream vercel/vercel-plugin skills, agents, and commands under the local `vercel` plugin identity for the Codex plugin marketplace.",
+    "developerName": "Vercel Labs",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://vercel.com/",
+    "privacyPolicyURL": "https://vercel.com/legal/privacy-policy",
+    "termsOfServiceURL": "https://vercel.com/legal/terms",
+    "defaultPrompt": [
+      "Audit this repo for Vercel deployment risks",
+      "Which Vercel tools fit this app best",
+      "Help wire the Vercel app into this workflow"
+    ],
+    "composerIcon": "./assets/app-icon.png",
+    "logo": "./assets/app-icon.png",
+    "screenshots": [],
+    "brandColor": "#000000"
+  },
+  "id": "vercel",
+  "originalAuthor": {
+    "name": "Vercel Labs",
+    "url": "https://github.com/vercel"
+  },
+  "sourceMarketplace": {
+    "slug": "openai-codex",
+    "url": "https://github.com/openai/plugins"
+  }
+}

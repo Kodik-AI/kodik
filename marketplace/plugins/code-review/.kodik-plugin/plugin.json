@@ -1,0 +1,16 @@
+{
+  "name": "code-review",
+  "description": "Automated code review for pull requests using multiple specialized agents with confidence-based scoring",
+  "author": {
+    "name": "Kodik"
+  },
+  "id": "code-review",
+  "originalAuthor": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "sourceMarketplace": {
+    "slug": "claude-official",
+    "url": "https://github.com/anthropics/claude-plugins-official"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "test-android-apps",
+  "version": "0.1.0",
+  "description": "Test Android apps with emulator workflows for reproduction, screenshots, UI inspection, log capture, and performance profiling.",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepage": "https://openai.com/",
+  "repository": "https://github.com/openai/plugins",
+  "license": "MIT",
+  "keywords": [
+    "android",
+    "adb",
+    "emulator",
+    "qa",
+    "logcat",
+    "uiautomator",
+    "performance",
+    "simpleperf",
+    "perfetto",
+    "memory",
+    "leaks",
+    "heap"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Test Android Apps",
+    "shortDescription": "Reproduce issues, inspect UI, and capture performance evidence from Android emulators",
+    "longDescription": "Use Test Android Apps to build and install app variants, drive a booted Android emulator with adb input events, inspect UI trees, capture screenshots, collect logcat output, and gather Simpleperf, Perfetto, gfxinfo, or memory/leak evidence while reproducing issues.",
+    "developerName": "OpenAI",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://openai.com/",
+    "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/terms-of-use/",
+    "defaultPrompt": [
+      "Use Test Android Apps to reproduce an emulator issue, then capture screenshots, logs, UI state, and performance evidence."
+    ],
+    "brandColor": "#3DDC84",
+    "composerIcon": "./assets/test-android-apps-small.svg",
+    "logo": "./assets/app-icon.png",
+    "screenshots": []
+  },
+  "id": "test-android-apps",
+  "originalAuthor": {
+    "name": "OpenAI",
+    "email": "support@openai.com",
+    "url": "https://openai.com/"
+  },
+  "sourceMarketplace": {
+    "slug": "openai-codex",
+    "url": "https://github.com/openai/plugins"
+  }
+}

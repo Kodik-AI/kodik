@@ -1,0 +1,17 @@
+{
+  "name": "learning-output-style",
+  "version": "1.0.0",
+  "description": "Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style)",
+  "author": {
+    "name": "Kodik"
+  },
+  "id": "learning-output-style",
+  "originalAuthor": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "sourceMarketplace": {
+    "slug": "claude-official",
+    "url": "https://github.com/anthropics/claude-plugins-official"
+  }
+}

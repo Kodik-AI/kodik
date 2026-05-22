@@ -1,0 +1,17 @@
+{
+  "name": "md-management",
+  "description": "Tools to maintain and improve CLAUDE.md files - audit quality, capture session learnings, and keep project memory current.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kodik"
+  },
+  "id": "md-management",
+  "originalAuthor": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "sourceMarketplace": {
+    "slug": "claude-official",
+    "url": "https://github.com/anthropics/claude-plugins-official"
+  }
+}

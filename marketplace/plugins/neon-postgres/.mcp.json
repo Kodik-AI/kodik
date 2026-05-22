@@ -1,0 +1,21 @@
+{
+  "servers": {
+    "neon-postgres": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "${env:POSTGRES_CONNECTION_STRING}"
+      ],
+      "disabled": true
+    }
+  },
+  "meta": {
+    "neon-postgres": {
+      "id": "neon-postgres-mcp",
+      "title": "neon-postgres",
+      "description": "Community MCP server for neon-postgres. Set the required env vars and flip disabled to false."
+    }
+  }
+}

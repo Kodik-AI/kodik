@@ -1,0 +1,19 @@
+{
+  "name": "discord",
+  "description": "Discord channel for your AI assistant — messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /discord:access.",
+  "version": "0.0.4",
+  "keywords": [
+    "discord",
+    "messaging",
+    "channel",
+    "mcp"
+  ],
+  "id": "discord",
+  "author": {
+    "name": "Kodik"
+  },
+  "sourceMarketplace": {
+    "slug": "claude-official",
+    "url": "https://github.com/anthropics/claude-plugins-official"
+  }
+}

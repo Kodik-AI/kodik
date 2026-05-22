@@ -1,0 +1,22 @@
+{
+  "servers": {
+    "figma": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "figma-developer-mcp",
+        "--figma-api-key=${env:FIGMA_API_KEY}",
+        "--stdio"
+      ],
+      "disabled": true
+    }
+  },
+  "meta": {
+    "figma": {
+      "id": "figma-mcp",
+      "title": "figma",
+      "description": "Community MCP server for figma. Set the required env vars and flip disabled to false."
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "hookify",
+  "description": "Easily create hooks to prevent unwanted behaviors by analyzing conversation patterns",
+  "author": {
+    "name": "Kodik"
+  },
+  "id": "hookify",
+  "originalAuthor": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "sourceMarketplace": {
+    "slug": "claude-official",
+    "url": "https://github.com/anthropics/claude-plugins-official"
+  }
+}

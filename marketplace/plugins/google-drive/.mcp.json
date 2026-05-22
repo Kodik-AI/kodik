@@ -1,0 +1,20 @@
+{
+  "servers": {
+    "google-drive": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-gdrive"
+      ],
+      "disabled": true
+    }
+  },
+  "meta": {
+    "google-drive": {
+      "id": "google-drive-mcp",
+      "title": "google-drive",
+      "description": "Community MCP server for google-drive. Set the required env vars and flip disabled to false."
+    }
+  }
+}

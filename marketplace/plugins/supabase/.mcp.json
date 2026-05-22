@@ -1,0 +1,24 @@
+{
+  "servers": {
+    "supabase": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase"
+      ],
+      "env": {
+        "SUPABASE_URL": "${env:SUPABASE_URL}",
+        "SUPABASE_ANON_KEY": "${env:SUPABASE_ANON_KEY}"
+      },
+      "disabled": true
+    }
+  },
+  "meta": {
+    "supabase": {
+      "id": "supabase-mcp",
+      "title": "supabase",
+      "description": "Community MCP server for supabase. Set the required env vars and flip disabled to false."
+    }
+  }
+}

@@ -1,0 +1,1437 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "kodik",
+  "description": "Official Kodik plugins marketplace — curated by the Kodik team.",
+  "owner": {
+    "name": "Kodik",
+    "url": "https://kodik.ai"
+  },
+  "plugins": [
+    {
+      "name": "discord",
+      "description": "Discord channel for your AI assistant — messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /discord:access.",
+      "author": {
+        "name": "Kodik"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/discord",
+      "version": "0.0.4"
+    },
+    {
+      "name": "imessage",
+      "description": "iMessage channel for your AI assistant — reads chat.db directly, sends via AppleScript. Built-in access control; manage pairing, allowlists, and policy via /imessage:access.",
+      "author": {
+        "name": "Kodik"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/imessage",
+      "version": "0.1.0"
+    },
+    {
+      "name": "telegram",
+      "description": "Telegram channel for your AI assistant — messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /telegram:access.",
+      "author": {
+        "name": "Kodik"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/telegram",
+      "version": "0.0.6"
+    },
+    {
+      "name": "agent-sdk-dev",
+      "description": "your AI assistant Agent SDK Development Plugin",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/agent-sdk-dev"
+    },
+    {
+      "name": "code-setup",
+      "description": "Analyze codebases and recommend tailored your AI assistant automations such as hooks, skills, MCP servers, and subagents.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/code-setup",
+      "version": "1.0.0"
+    },
+    {
+      "name": "md-management",
+      "description": "Tools to maintain and improve CLAUDE.md files - audit quality, capture session learnings, and keep project memory current.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/md-management",
+      "version": "1.0.0"
+    },
+    {
+      "name": "code-modernization",
+      "description": "Modernize legacy codebases (COBOL, legacy Java/C++, monolith web apps) with a structured assess → map → extract-rules → brief → reimagine/transform → harden workflow and specialist review agents",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/code-modernization"
+    },
+    {
+      "name": "code-review",
+      "description": "Automated code review for pull requests using multiple specialized agents with confidence-based scoring",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/code-review"
+    },
+    {
+      "name": "code-simplifier",
+      "description": "Agent that simplifies and refines code for clarity, consistency, and maintainability while preserving functionality",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/code-simplifier",
+      "version": "1.0.0"
+    },
+    {
+      "name": "commit-commands",
+      "description": "Streamline your git workflow with simple commands for committing, pushing, and creating pull requests",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/commit-commands"
+    },
+    {
+      "name": "cwc-makers",
+      "description": "Seamless onboarding for the Code-with-your AI assistant Makers Cardputer: one /maker-setup command clones the build-with-claude repo, flashes UIFlow firmware, and installs the your AI assistant Buddy app bundle onto a freshly-plugged-in M5Stack Cardputer-Adv.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/cwc-makers",
+      "version": "1.0.0"
+    },
+    {
+      "name": "example-plugin",
+      "description": "A comprehensive example plugin demonstrating all your AI assistant extension options including commands, agents, skills, hooks, and MCP servers",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/example-plugin"
+    },
+    {
+      "name": "explanatory-output-style",
+      "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/explanatory-output-style",
+      "version": "1.0.0"
+    },
+    {
+      "name": "feature-dev",
+      "description": "Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/feature-dev"
+    },
+    {
+      "name": "frontend-design",
+      "description": "Frontend design skill for UI/UX implementation",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/frontend-design"
+    },
+    {
+      "name": "hookify",
+      "description": "Easily create hooks to prevent unwanted behaviors by analyzing conversation patterns",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/hookify"
+    },
+    {
+      "name": "learning-output-style",
+      "description": "Interactive learning mode that requests meaningful code contributions at decision points (mimics the unshipped Learning output style)",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/learning-output-style",
+      "version": "1.0.0"
+    },
+    {
+      "name": "math-olympiad",
+      "description": "Solve competition math (IMO, Putnam, USAMO) with adversarial verification that catches what self-verification misses. Fresh-context verifiers attack proofs with specific failure patterns. Calibrated abstention over bluffing.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/math-olympiad"
+    },
+    {
+      "name": "mcp-server-dev",
+      "description": "Skills for designing and building MCP servers that work seamlessly with your AI assistant — guides you through deployment models (remote HTTP, MCPB, local), tool design patterns, auth, and interactive MCP apps.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/mcp-server-dev"
+    },
+    {
+      "name": "playground",
+      "description": "Creates interactive HTML playgrounds — self-contained single-file explorers with visual controls, live preview, and prompt output with copy button",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/playground"
+    },
+    {
+      "name": "plugin-dev",
+      "description": "Plugin development toolkit with skills for creating agents, commands, hooks, MCP integrations, and comprehensive plugin structure guidance",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/plugin-dev"
+    },
+    {
+      "name": "pr-review-toolkit",
+      "description": "Comprehensive PR review agents specializing in comments, tests, error handling, type design, code quality, and code simplification",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/pr-review-toolkit"
+    },
+    {
+      "name": "ralph-loop",
+      "description": "Continuous self-referential AI loops for interactive iterative development, implementing the Ralph Wiggum technique. Run your AI assistant in a while-true loop with the same prompt until task completion.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/ralph-loop",
+      "version": "1.0.0"
+    },
+    {
+      "name": "security-guidance",
+      "description": "Security reminder hook that warns about potential security issues when editing files, including command injection, XSS, and unsafe code patterns",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/security-guidance"
+    },
+    {
+      "name": "skill-creator",
+      "description": "Create new skills, improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, update or optimize an existing skill, run evals to test a skill, or benchmark skill performance with variance analysis.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Anthropic",
+        "email": "support@anthropic.com"
+      },
+      "sourceMarketplace": {
+        "slug": "claude-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      "source": "./plugins/skill-creator"
+    },
+    {
+      "name": "atlassian-rovo",
+      "description": "Manage Jira and Confluence fast",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Atlassian",
+        "url": "https://www.atlassian.com"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/atlassian-rovo",
+      "version": "1.0.0"
+    },
+    {
+      "name": "box",
+      "description": "Search and reference your documents",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "url": "https://www.box.com/home"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/box",
+      "version": "0.0.0"
+    },
+    {
+      "name": "build-ios-apps",
+      "description": "Build iOS apps with workflows for App Intents, SwiftUI UI work, refactors, performance profiling, leak investigation, and simulator debugging.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/build-ios-apps",
+      "version": "0.1.0"
+    },
+    {
+      "name": "build-macos-apps",
+      "description": "Build, run, test, debug, instrument, and implement local macOS apps using Xcode, SwiftUI, AppKit interop, unified logging, and shell-first desktop workflows.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/build-macos-apps",
+      "version": "0.1.2"
+    },
+    {
+      "name": "build-web-apps",
+      "description": "Build web apps with frontend asset design, browser testing, UI components, payments, and database guidance.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/build-web-apps",
+      "version": "0.1.0"
+    },
+    {
+      "name": "canva",
+      "description": "Search, create, edit designs",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Canva",
+        "url": "https://www.canva.com"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/canva",
+      "version": "1.0.0"
+    },
+    {
+      "name": "circleci",
+      "description": "Build, test, and deploy any application",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "CircleCI",
+        "url": "https://circleci.com"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/circleci",
+      "version": "1.0.0"
+    },
+    {
+      "name": "cloudflare",
+      "description": "Cloudflare platform plugin with curated skills for Workers, Wrangler, and Agents SDK plus the official Cloudflare API MCP server.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Cloudflare",
+        "url": "https://workers.cloudflare.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/cloudflare",
+      "version": "0.1.0"
+    },
+    {
+      "name": "coderabbit",
+      "description": "AI-powered code review in your AI assistant, powered by CodeRabbit.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "CodeRabbit AI",
+        "email": "support@coderabbit.ai",
+        "url": "https://coderabbit.ai"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/coderabbit",
+      "version": "1.1.1"
+    },
+    {
+      "name": "security",
+      "description": "your AI assistant Security workflows for security scans, analysis, and investigation.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/security",
+      "version": "0.1.0"
+    },
+    {
+      "name": "expo",
+      "description": "Official Expo skills for building, deploying, upgrading, and debugging Expo and React Native apps.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Expo Team",
+        "email": "support@expo.dev",
+        "url": "https://expo.dev"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/expo",
+      "version": "1.0.0"
+    },
+    {
+      "name": "figma",
+      "description": "Figma workflows for design implementation, Code Connect templates, and design system rule generation.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Figma",
+        "url": "https://www.figma.com"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/figma",
+      "version": "2.0.7"
+    },
+    {
+      "name": "game-studio",
+      "description": "Design, prototype, and ship browser games with guided 2D and 3D workflows, asset pipelines, and playtesting support.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/game-studio",
+      "version": "0.1.0"
+    },
+    {
+      "name": "github",
+      "description": "Inspect repositories, triage pull requests and issues, debug CI, and publish changes through a hybrid GitHub connector and CLI workflow.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/github",
+      "version": "0.1.0"
+    },
+    {
+      "name": "gmail",
+      "description": "Work with Gmail using the configured Gmail app connector.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/gmail",
+      "version": "0.1.0"
+    },
+    {
+      "name": "google-calendar",
+      "description": "Connect Google Calendar for scheduling, availability, daily briefs, and event management.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/google-calendar",
+      "version": "1.2.0"
+    },
+    {
+      "name": "google-drive",
+      "description": "Use Google Drive as the single entrypoint for Drive, Docs, Sheets, and Slides work.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/google-drive",
+      "version": "0.1.0"
+    },
+    {
+      "name": "heygen",
+      "description": "Create HeyGen avatar videos and personalized video messages. Build a persistent digital identity from a photo, then generate presenter-led videos with your digital twin.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "HeyGen",
+        "email": "developers@heygen.com",
+        "url": "https://heygen.com"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/heygen",
+      "version": "2.2.0"
+    },
+    {
+      "name": "hubspot",
+      "description": "Work with your HubSpot data to analyze patterns, create and update records, and manage your CRM operations.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "HubSpot",
+        "url": "https://www.hubspot.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/hubspot",
+      "version": "2.0.0"
+    },
+    {
+      "name": "hugging-face",
+      "description": "Inspect models, datasets, Spaces, and research",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Hugging Face",
+        "url": "https://huggingface.co"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/hugging-face",
+      "version": "1.0.0"
+    },
+    {
+      "name": "hyperframes",
+      "description": "Write HTML, render video. Compositions, GSAP animations, captions, voiceovers, audio-reactive visuals, and website-to-video capture for HyperFrames.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "HeyGen",
+        "email": "hyperframes@heygen.com",
+        "url": "https://hyperframes.heygen.com"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/hyperframes",
+      "version": "0.1.0"
+    },
+    {
+      "name": "life-science-research",
+      "description": "General life-sciences research workflows with query routing, evidence synthesis, and optional parallel subagent analysis across genetics, omics, biology, chemistry, structure, clinical evidence, and public dataset discovery.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/life-science-research",
+      "version": "1.0.0"
+    },
+    {
+      "name": "linear",
+      "description": "Find and reference issues and projects.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "url": "https://linear.app/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/linear",
+      "version": "0.0.0"
+    },
+    {
+      "name": "neon-postgres",
+      "description": "Manage Neon Serverless Postgres projects and databases with the neon-postgres agent skill and the Neon MCP Server",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Neon",
+        "email": "andre@neon.tech",
+        "url": "https://neon.com"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/neon-postgres",
+      "version": "1.0.0"
+    },
+    {
+      "name": "netlify",
+      "description": "Deploy projects and manage preview or production releases on Netlify.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Netlify",
+        "url": "https://www.netlify.com"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/netlify",
+      "version": "1.1.0"
+    },
+    {
+      "name": "notion",
+      "description": "Notion workflows for implementation planning, research synthesis, meeting preparation, and knowledge capture.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/notion",
+      "version": "0.1.0"
+    },
+    {
+      "name": "developers",
+      "description": "Build with OpenAI APIs, Agents SDK, and ChatGPT Apps, and create and save OpenAI API keys from your AI assistant.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/developers",
+      "version": "1.1.0"
+    },
+    {
+      "name": "outlook-calendar",
+      "description": "Connect Outlook Calendar for scheduling, daily briefs, event prep, and safe meeting changes.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/outlook-calendar",
+      "version": "0.1.0"
+    },
+    {
+      "name": "outlook-email",
+      "description": "Work with Outlook Email using the configured Microsoft Outlook app connector.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/outlook-email",
+      "version": "0.1.0"
+    },
+    {
+      "name": "plugin-eval",
+      "description": "Evaluate your AI assistant skills and plugins from chat with a beginner-friendly start command, local-first reports, token budget explanations, and guided benchmarking.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI Codex",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/plugin-eval",
+      "version": "0.1.0"
+    },
+    {
+      "name": "remotion",
+      "description": "Remotion video creation skills — best practices, animations, audio, captions, 3D, and more for building programmatic videos with React.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Remotion",
+        "email": "hi@remotion.dev",
+        "url": "https://remotion.dev"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/remotion",
+      "version": "1.0.0"
+    },
+    {
+      "name": "render",
+      "description": "Skills for deploying, debugging, monitoring, and migrating apps on Render.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Render",
+        "email": "support@render.com",
+        "url": "https://render.com"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/render",
+      "version": "0.1.0"
+    },
+    {
+      "name": "sentry",
+      "description": "Inspect recent issues and events in Sentry from your AI assistant.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/sentry",
+      "version": "0.1.0"
+    },
+    {
+      "name": "sharepoint",
+      "description": "Work with SharePoint using the configured Microsoft SharePoint app connector.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/sharepoint",
+      "version": "0.1.0"
+    },
+    {
+      "name": "slack",
+      "description": "Work with Slack using the configured Slack integration.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/slack",
+      "version": "0.1.0"
+    },
+    {
+      "name": "stripe",
+      "description": "Payments and business tools",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Stripe",
+        "url": "https://stripe.com"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/stripe",
+      "version": "1.0.0"
+    },
+    {
+      "name": "supabase",
+      "description": "Access your Supabase projects and perform tasks like managing tables, fetching config, and querying data.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Supabase",
+        "email": "support@supabase.io",
+        "url": "https://supabase.com"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/supabase",
+      "version": "0.1.4"
+    },
+    {
+      "name": "superpowers",
+      "description": "An agentic skills framework & software development methodology that works: planning, TDD, debugging, and collaboration workflows.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Jesse Vincent",
+        "email": "jesse@fsck.com",
+        "url": "https://github.com/obra"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/superpowers",
+      "version": "5.1.0"
+    },
+    {
+      "name": "teams",
+      "description": "Work with Teams using the configured Microsoft Teams app connector.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/teams",
+      "version": "0.1.0"
+    },
+    {
+      "name": "temporal",
+      "description": "Comprehensive skill for the entire Temporal lifecycle — developing applications, using the Temporal CLI, running and managing Temporal Server, and working with Temporal Cloud.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Temporal",
+        "url": "https://temporal.io/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/temporal",
+      "version": "0.2.0"
+    },
+    {
+      "name": "test-android-apps",
+      "description": "Test Android apps with emulator workflows for reproduction, screenshots, UI inspection, log capture, and performance profiling.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/test-android-apps",
+      "version": "0.1.0"
+    },
+    {
+      "name": "twilio-developer-kit",
+      "description": "Twilio Skills provide procedural knowledge for AI coding agents — which APIs to use, in what order, and what to avoid. Covers Messaging, Voice, Verify, SendGrid, and 30+ products.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Twilio",
+        "url": "https://www.twilio.com"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/twilio-developer-kit",
+      "version": "0.2.0"
+    },
+    {
+      "name": "vercel",
+      "description": "Build and deploy web apps and agents",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Vercel Labs",
+        "url": "https://github.com/vercel"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/vercel",
+      "version": "0.21.0"
+    },
+    {
+      "name": "zoom",
+      "description": "Connect your AI assistant to Zoom meeting context and build Zoom apps, bots, API integrations, SDK workflows, webhooks, and automations.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Zoom",
+        "url": "https://github.com/zoom"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/zoom",
+      "version": "1.0.0"
+    },
+    {
+      "name": "zotero",
+      "description": "Work with Zotero from your AI assistant: search your library, export BibTeX, insert citations, and import references through the Zotero desktop app.",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "OpenAI",
+        "email": "support@openai.com",
+        "url": "https://openai.com/"
+      },
+      "sourceMarketplace": {
+        "slug": "openai-codex",
+        "url": "https://github.com/openai/plugins"
+      },
+      "source": "./plugins/zotero",
+      "version": "0.1.0"
+    },
+    {
+      "name": "agent-compatibility",
+      "description": "CLI-backed repo compatibility scans plus your AI assistant agents that audit startup, validation, and docs against reality.",
+      "category": "developer-tools",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Cursor",
+        "email": "plugins@cursor.com"
+      },
+      "sourceMarketplace": {
+        "slug": "cursor-official",
+        "url": "https://github.com/cursor/plugins"
+      },
+      "source": "./plugins/agent-compatibility",
+      "version": "1.0.0",
+      "tags": [
+        "agents",
+        "compatibility",
+        "quality",
+        "workflow"
+      ]
+    },
+    {
+      "name": "cli-for-agent",
+      "description": "Patterns for designing CLIs that coding agents can run reliably: non-interactive flags, layered help with examples, pipelines, actionable errors, idempotency, and dry-run.",
+      "category": "developer-tools",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Cursor",
+        "email": "plugins@cursor.com"
+      },
+      "sourceMarketplace": {
+        "slug": "cursor-official",
+        "url": "https://github.com/cursor/plugins"
+      },
+      "source": "./plugins/cli-for-agent",
+      "version": "1.0.0",
+      "tags": [
+        "cli",
+        "agents",
+        "automation",
+        "developer-tools"
+      ]
+    },
+    {
+      "name": "continual-learning",
+      "description": "Incrementally learns durable user preferences and workspace facts from transcript changes and keeps AGENTS.md up to date with plain bullet points.",
+      "category": "developer-tools",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Cursor",
+        "email": "plugins@cursor.com"
+      },
+      "sourceMarketplace": {
+        "slug": "cursor-official",
+        "url": "https://github.com/cursor/plugins"
+      },
+      "source": "./plugins/continual-learning",
+      "version": "1.0.0",
+      "tags": [
+        "automation",
+        "memory",
+        "transcripts"
+      ]
+    },
+    {
+      "name": "create-plugin",
+      "description": "Scaffold and validate new your AI assistant plugins. Handles directory setup, manifest generation, and pre-submission quality checks for the marketplace.",
+      "category": "developer-tools",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Cursor",
+        "email": "plugins@cursor.com"
+      },
+      "sourceMarketplace": {
+        "slug": "cursor-official",
+        "url": "https://github.com/cursor/plugins"
+      },
+      "source": "./plugins/create-plugin",
+      "version": "1.0.0",
+      "tags": [
+        "meta",
+        "authoring",
+        "templates"
+      ]
+    },
+    {
+      "name": "sdk",
+      "description": "Build apps, scripts, CI pipelines, and automations on top of the your AI assistant TypeScript SDK (@cursor/sdk) — runtime selection, auth, streaming, MCP, error handling, and ready-to-extend integration patterns.",
+      "category": "developer-tools",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Cursor",
+        "email": "plugins@cursor.com"
+      },
+      "sourceMarketplace": {
+        "slug": "cursor-official",
+        "url": "https://github.com/cursor/plugins"
+      },
+      "source": "./plugins/sdk",
+      "version": "1.0.0",
+      "tags": [
+        "sdk",
+        "agents",
+        "automation",
+        "developer-tools"
+      ]
+    },
+    {
+      "name": "team-kit",
+      "description": "Internal workflows used by your AI assistant developers for CI, code review, shipping, control-cli, control-ui, verify-this, test reliability, code cleanup, and work summaries. Designed to work without requiring third-party service integrations.",
+      "category": "developer-tools",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Cursor",
+        "email": "plugins@cursor.com"
+      },
+      "sourceMarketplace": {
+        "slug": "cursor-official",
+        "url": "https://github.com/cursor/plugins"
+      },
+      "source": "./plugins/team-kit",
+      "version": "1.1.0",
+      "tags": [
+        "internal-workflows",
+        "quality",
+        "delivery",
+        "review",
+        "automation"
+      ]
+    },
+    {
+      "name": "docs-canvas",
+      "description": "Render documentation — architecture notes, API references, runbooks, and codebase walkthroughs — as a navigable your AI assistant Canvas with sections, table of contents, diagrams, and cross-references.",
+      "category": "developer-tools",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Cursor",
+        "email": "plugins@cursor.com"
+      },
+      "sourceMarketplace": {
+        "slug": "cursor-official",
+        "url": "https://github.com/cursor/plugins"
+      },
+      "source": "./plugins/docs-canvas",
+      "version": "0.1.0",
+      "tags": [
+        "canvas",
+        "documentation",
+        "workflow"
+      ]
+    },
+    {
+      "name": "orchestrate",
+      "description": "Fan a large task out across parallel your AI assistant cloud agents via the your AI assistant SDK: planners publish tasks, workers hand off back up, and a script reconciles the tree from disk and git.",
+      "category": "developer-tools",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Cursor",
+        "email": "plugins@cursor.com"
+      },
+      "sourceMarketplace": {
+        "slug": "cursor-official",
+        "url": "https://github.com/cursor/plugins"
+      },
+      "source": "./plugins/orchestrate",
+      "version": "1.0.0",
+      "tags": [
+        "agents",
+        "automation",
+        "developer-tools",
+        "sdk"
+      ]
+    },
+    {
+      "name": "pr-review-canvas",
+      "description": "Render PR diffs as interactive your AI assistant Canvases organized for reviewer comprehension — groups changes by importance, separates boilerplate from core logic, and highlights tricky or unexpected code.",
+      "category": "developer-tools",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Cursor",
+        "email": "plugins@cursor.com"
+      },
+      "sourceMarketplace": {
+        "slug": "cursor-official",
+        "url": "https://github.com/cursor/plugins"
+      },
+      "source": "./plugins/pr-review-canvas",
+      "version": "0.1.0",
+      "tags": [
+        "canvas",
+        "code-review",
+        "pull-request",
+        "workflow"
+      ]
+    },
+    {
+      "name": "teaching",
+      "description": "Skill mapping, practice plans, and learning retrospectives. Builds personalized roadmaps with milestones and practice checkpoints, and runs periodic reviews to adjust based on progress.",
+      "category": "utilities",
+      "author": {
+        "name": "Kodik"
+      },
+      "originalAuthor": {
+        "name": "Cursor",
+        "email": "plugins@cursor.com"
+      },
+      "sourceMarketplace": {
+        "slug": "cursor-official",
+        "url": "https://github.com/cursor/plugins"
+      },
+      "source": "./plugins/teaching",
+      "version": "1.0.0",
+      "tags": [
+        "teaching",
+        "education",
+        "practice"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "explanatory-output-style",
+  "version": "1.0.0",
+  "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)",
+  "author": {
+    "name": "Kodik"
+  },
+  "id": "explanatory-output-style",
+  "originalAuthor": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "sourceMarketplace": {
+    "slug": "claude-official",
+    "url": "https://github.com/anthropics/claude-plugins-official"
+  }
+}

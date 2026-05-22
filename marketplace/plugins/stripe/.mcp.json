@@ -1,0 +1,24 @@
+{
+  "servers": {
+    "stripe": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@stripe/mcp",
+        "--tools=all"
+      ],
+      "env": {
+        "STRIPE_SECRET_KEY": "${env:STRIPE_SECRET_KEY}"
+      },
+      "disabled": true
+    }
+  },
+  "meta": {
+    "stripe": {
+      "id": "stripe-mcp",
+      "title": "stripe",
+      "description": "Community MCP server for stripe. Set the required env vars and flip disabled to false."
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "code-setup",
+  "description": "Analyze codebases and recommend tailored your AI assistant automations such as hooks, skills, MCP servers, and subagents.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kodik"
+  },
+  "id": "code-setup",
+  "originalAuthor": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  },
+  "sourceMarketplace": {
+    "slug": "claude-official",
+    "url": "https://github.com/anthropics/claude-plugins-official"
+  }
+}

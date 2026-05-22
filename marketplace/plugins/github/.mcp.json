@@ -1,0 +1,23 @@
+{
+  "servers": {
+    "github": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${env:GITHUB_PERSONAL_ACCESS_TOKEN}"
+      },
+      "disabled": true
+    }
+  },
+  "meta": {
+    "github": {
+      "id": "github-mcp",
+      "title": "github",
+      "description": "Community MCP server for github. Set the required env vars and flip disabled to false."
+    }
+  }
+}
