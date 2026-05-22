@@ -1,15 +1,21 @@
 {
   "servers": {
     "figma": {
-      "type": "http",
-      "url": "https://mcp.figma.com/mcp"
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "figma-developer-mcp",
+        "--figma-api-key=${user_config.api_key}",
+        "--stdio"
+      ]
     }
   },
   "meta": {
     "figma": {
       "id": "figma-mcp",
       "title": "figma",
-      "description": "Figma's official remote MCP server. Sign in with your Figma account to connect."
+      "description": "Figma access via personal access token. To switch to OAuth, register Kodik at figma.com/developers/apps and add the client_id to this config."
     }
   }
 }

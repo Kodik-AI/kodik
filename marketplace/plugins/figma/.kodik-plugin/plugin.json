@@ -42,6 +42,15 @@
     "screenshots": []
   },
   "id": "figma",
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Figma API key",
+      "description": "Generate a personal access token at https://www.figma.com/developers/api#access-tokens",
+      "sensitive": true,
+      "required": true
+    }
+  },
   "originalAuthor": {
     "name": "Figma",
     "url": "https://www.figma.com"
