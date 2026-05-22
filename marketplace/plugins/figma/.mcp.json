@@ -1,21 +1,15 @@
 {
   "servers": {
     "figma": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "figma-developer-mcp",
-        "--figma-api-key=${user_config.api_key}",
-        "--stdio"
-      ]
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
     }
   },
   "meta": {
     "figma": {
       "id": "figma-mcp",
       "title": "figma",
-      "description": "Community MCP server for figma. Generate a personal access token at figma.com/developers/api#access-tokens."
+      "description": "Figma's official remote MCP server. Sign in with your Figma account to connect."
     }
   }
 }
