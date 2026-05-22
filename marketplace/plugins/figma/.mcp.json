@@ -6,17 +6,16 @@
       "args": [
         "-y",
         "figma-developer-mcp",
-        "--figma-api-key=${env:FIGMA_API_KEY}",
+        "--figma-api-key=${user_config.api_key}",
         "--stdio"
-      ],
-      "disabled": true
+      ]
     }
   },
   "meta": {
     "figma": {
       "id": "figma-mcp",
       "title": "figma",
-      "description": "Community MCP server for figma. Set the required env vars and flip disabled to false."
+      "description": "Community MCP server for figma. Generate a personal access token at figma.com/developers/api#access-tokens."
     }
   }
 }
