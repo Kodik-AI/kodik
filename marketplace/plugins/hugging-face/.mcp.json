@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "huggingface": {
+      "type": "streamableHttp",
+      "url": "https://huggingface.co/mcp"
+    }
+  },
+  "meta": {
+    "huggingface": {
+      "id": "huggingface-mcp",
+      "title": "hugging-face",
+      "description": "Hugging Face's official MCP. Sign in to access private models, datasets, and Spaces; public content works anonymously."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "canva": {
+      "type": "streamableHttp",
+      "url": "https://mcp.canva.com/mcp"
+    }
+  },
+  "meta": {
+    "canva": {
+      "id": "canva-mcp",
+      "title": "canva",
+      "description": "Canva's official remote MCP. Sign in to search, create, and edit designs."
+    }
+  }
+}

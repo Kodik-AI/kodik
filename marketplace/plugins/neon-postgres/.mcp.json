@@ -1,7 +1,7 @@
 {
   "servers": {
     "neon": {
-      "type": "http",
+      "type": "streamableHttp",
       "url": "https://mcp.neon.tech/mcp"
     }
   },

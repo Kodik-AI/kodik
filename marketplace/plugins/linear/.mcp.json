@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "linear": {
+      "type": "sse",
+      "url": "https://mcp.linear.app/sse"
+    }
+  },
+  "meta": {
+    "linear": {
+      "id": "linear-mcp",
+      "title": "linear",
+      "description": "Linear's official remote MCP. Sign in with your Linear account."
+    }
+  }
+}

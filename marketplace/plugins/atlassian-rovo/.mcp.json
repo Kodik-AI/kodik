@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "atlassian": {
+      "type": "sse",
+      "url": "https://mcp.atlassian.com/v1/sse"
+    }
+  },
+  "meta": {
+    "atlassian": {
+      "id": "atlassian-mcp",
+      "title": "atlassian",
+      "description": "Atlassian's official remote MCP. Sign in to access Jira and Confluence via Rovo."
+    }
+  }
+}

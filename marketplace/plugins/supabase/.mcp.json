@@ -1,7 +1,7 @@
 {
   "servers": {
     "supabase": {
-      "type": "http",
+      "type": "streamableHttp",
       "url": "https://mcp.supabase.com/mcp"
     }
   },

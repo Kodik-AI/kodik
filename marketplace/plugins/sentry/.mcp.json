@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "sentry": {
+      "type": "streamableHttp",
+      "url": "https://mcp.sentry.dev/mcp"
+    }
+  },
+  "meta": {
+    "sentry": {
+      "id": "sentry-mcp",
+      "title": "sentry",
+      "description": "Sentry's official remote MCP. Sign in with your Sentry account to triage issues."
+    }
+  }
+}

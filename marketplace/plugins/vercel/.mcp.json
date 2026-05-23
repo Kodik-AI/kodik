@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "vercel": {
+      "type": "streamableHttp",
+      "url": "https://mcp.vercel.com"
+    }
+  },
+  "meta": {
+    "vercel": {
+      "id": "vercel-mcp",
+      "title": "vercel",
+      "description": "Vercel's official remote MCP. Sign in with your Vercel account."
+    }
+  }
+}
