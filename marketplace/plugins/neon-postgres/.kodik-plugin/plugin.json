@@ -17,7 +17,15 @@
     "sql"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
+  "userConfig": {
+    "connection_string": {
+      "type": "string",
+      "title": "Postgres connection string",
+      "description": "Paste a connection string in the form postgres://USER:PASSWORD@HOST/DB. From Neon, copy it from the project's Connection Details panel.",
+      "sensitive": true,
+      "required": true
+    }
+  },
   "interface": {
     "displayName": "Neon Postgres",
     "shortDescription": "Manage Neon Serverless Postgres projects and databases",

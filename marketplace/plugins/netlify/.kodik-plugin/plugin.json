@@ -16,7 +16,6 @@
     "static-sites"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
   "interface": {
     "displayName": "Netlify",
     "shortDescription": "Deploy projects and manage releases",

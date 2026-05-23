@@ -10,7 +10,6 @@
   "license": "MIT",
   "keywords": [],
   "skills": "./skills/",
-  "apps": "./.app.json",
   "interface": {
     "displayName": "Box",
     "shortDescription": "Search and reference your documents",

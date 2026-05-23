@@ -14,7 +14,6 @@
     "microsoft"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
   "interface": {
     "displayName": "Teams",
     "shortDescription": "Summarize Teams and draft follow-ups",

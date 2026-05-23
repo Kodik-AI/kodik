@@ -14,7 +14,6 @@
     "google"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
   "interface": {
     "displayName": "Gmail",
     "shortDescription": "Read and manage Gmail",

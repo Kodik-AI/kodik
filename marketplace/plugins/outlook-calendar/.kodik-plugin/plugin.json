@@ -18,7 +18,6 @@
     "meeting-prep"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
   "interface": {
     "displayName": "Outlook Calendar",
     "shortDescription": "Manage Outlook schedules and meeting changes",

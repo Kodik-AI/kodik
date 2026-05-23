@@ -16,7 +16,6 @@
     "customer-support"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
   "interface": {
     "displayName": "HubSpot",
     "shortDescription": "Work with your HubSpot data to analyze patterns, create and update records, and manage your CRM operations.",

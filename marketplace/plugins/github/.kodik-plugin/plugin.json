@@ -17,7 +17,15 @@
     "actions"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
+  "userConfig": {
+    "personal_access_token": {
+      "type": "string",
+      "title": "GitHub personal access token",
+      "description": "Create a fine-grained token at https://github.com/settings/tokens with the scopes you need (repo, read:org, etc.).",
+      "sensitive": true,
+      "required": true
+    }
+  },
   "interface": {
     "displayName": "GitHub",
     "shortDescription": "Triage PRs, issues, CI, and publish flows",

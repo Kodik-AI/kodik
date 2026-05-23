@@ -8,17 +8,16 @@
         "@supabase/mcp-server-supabase"
       ],
       "env": {
-        "SUPABASE_URL": "${env:SUPABASE_URL}",
-        "SUPABASE_ANON_KEY": "${env:SUPABASE_ANON_KEY}"
-      },
-      "disabled": true
+        "SUPABASE_URL": "${user_config.project_url}",
+        "SUPABASE_ANON_KEY": "${user_config.anon_key}"
+      }
     }
   },
   "meta": {
     "supabase": {
       "id": "supabase-mcp",
       "title": "supabase",
-      "description": "Community MCP server for supabase. Set the required env vars and flip disabled to false."
+      "description": "Official Supabase MCP. Paste your project URL + anon/service-role key from Supabase project settings."
     }
   }
 }

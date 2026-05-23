@@ -16,7 +16,6 @@
     "machine-learning"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
   "interface": {
     "displayName": "Hugging Face",
     "shortDescription": "Inspect models, datasets, Spaces, and research",

@@ -12,7 +12,6 @@
     "atlassian"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
   "interface": {
     "displayName": "Atlassian Rovo",
     "shortDescription": "Manage Jira and Confluence fast",

@@ -16,7 +16,21 @@
     "mcp"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
+  "userConfig": {
+    "project_url": {
+      "type": "string",
+      "title": "Supabase project URL",
+      "description": "The HTTPS URL of your Supabase project, e.g. https://xyzcompany.supabase.co. Find it in Project Settings → API.",
+      "required": true
+    },
+    "anon_key": {
+      "type": "string",
+      "title": "Supabase API key",
+      "description": "The anon (public) or service-role key from Project Settings → API. Service-role grants full DB access.",
+      "sensitive": true,
+      "required": true
+    }
+  },
   "interface": {
     "displayName": "Supabase",
     "shortDescription": "Supabase skills and MCP tools for Codex",

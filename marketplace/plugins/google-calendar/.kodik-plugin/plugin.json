@@ -17,7 +17,6 @@
     "productivity"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
   "interface": {
     "displayName": "Google Calendar",
     "shortDescription": "Manage Google Calendar events and schedules",

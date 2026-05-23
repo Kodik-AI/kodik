@@ -23,7 +23,6 @@
     "webhooks",
     "oauth"
   ],
-  "apps": "./.app.json",
   "skills": "./skills/",
   "interface": {
     "displayName": "Zoom",

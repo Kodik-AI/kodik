@@ -14,7 +14,21 @@
     "collaboration"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
+  "userConfig": {
+    "bot_token": {
+      "type": "string",
+      "title": "Slack bot token",
+      "description": "Create a Slack app at https://api.slack.com/apps with bot scopes (channels:read, chat:write, etc.) and paste its xoxb- token.",
+      "sensitive": true,
+      "required": true
+    },
+    "team_id": {
+      "type": "string",
+      "title": "Slack workspace (team) ID",
+      "description": "Your Slack workspace ID, e.g. T01ABCDEF. Find it via your workspace URL or the Slack app's Basic Information page.",
+      "required": true
+    }
+  },
   "interface": {
     "displayName": "Slack",
     "shortDescription": "Read and manage Slack",

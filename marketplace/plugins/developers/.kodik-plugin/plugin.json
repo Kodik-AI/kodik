@@ -20,7 +20,6 @@
     "codex"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
   "interface": {
     "displayName": "OpenAI Developers",
     "shortDescription": "Develop AI apps, agents, and ChatGPT Apps with OpenAI best practices",

@@ -8,17 +8,16 @@
         "@modelcontextprotocol/server-slack"
       ],
       "env": {
-        "SLACK_BOT_TOKEN": "${env:SLACK_BOT_TOKEN}",
-        "SLACK_TEAM_ID": "${env:SLACK_TEAM_ID}"
-      },
-      "disabled": true
+        "SLACK_BOT_TOKEN": "${user_config.bot_token}",
+        "SLACK_TEAM_ID": "${user_config.team_id}"
+      }
     }
   },
   "meta": {
     "slack": {
       "id": "slack-mcp",
       "title": "slack",
-      "description": "Community MCP server for slack. Set the required env vars and flip disabled to false."
+      "description": "Community Slack MCP. Create a bot at https://api.slack.com/apps and paste its bot token + team ID."
     }
   }
 }

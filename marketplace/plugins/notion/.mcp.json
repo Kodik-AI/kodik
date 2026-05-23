@@ -8,16 +8,15 @@
         "@notionhq/notion-mcp-server"
       ],
       "env": {
-        "NOTION_API_KEY": "${env:NOTION_API_KEY}"
-      },
-      "disabled": true
+        "NOTION_API_KEY": "${user_config.api_key}"
+      }
     }
   },
   "meta": {
     "notion": {
       "id": "notion-mcp",
       "title": "notion",
-      "description": "Community MCP server for notion. Set the required env vars and flip disabled to false."
+      "description": "Community Notion MCP. Create an integration at https://www.notion.so/profile/integrations and paste its secret."
     }
   }
 }

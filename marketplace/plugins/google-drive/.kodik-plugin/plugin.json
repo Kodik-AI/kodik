@@ -16,7 +16,6 @@
     "productivity"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
   "interface": {
     "displayName": "Google Drive",
     "shortDescription": "Work across Drive, Docs, Sheets, and Slides",

@@ -15,5 +15,26 @@
   "sourceMarketplace": {
     "slug": "claude-official",
     "url": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "userConfig": {
+    "bot_token": {
+      "type": "string",
+      "title": "Discord bot token",
+      "description": "Create a bot at https://discord.com/developers/applications and paste its token here.",
+      "sensitive": true,
+      "required": true
+    },
+    "access_mode": {
+      "type": "string",
+      "title": "Access mode",
+      "description": "Set to 'static' to lock the bot to a fixed allowlist; leave blank for the default interactive pairing flow.",
+      "required": false
+    },
+    "state_dir": {
+      "type": "string",
+      "title": "State directory",
+      "description": "Override where the bridge stores its pairing/allowlist files. Leave blank to use ~/.claude/channels/discord.",
+      "required": false
+    }
   }
 }

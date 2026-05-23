@@ -25,7 +25,6 @@
     "discord-bot"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
   "interface": {
     "displayName": "Vercel",
     "shortDescription": "Build and deploy web apps and agents",

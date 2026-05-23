@@ -179,22 +179,6 @@
       "version": "1.0.0"
     },
     {
-      "name": "example-plugin",
-      "description": "A comprehensive example plugin demonstrating all your AI assistant extension options including commands, agents, skills, hooks, and MCP servers",
-      "author": {
-        "name": "Kodik"
-      },
-      "originalAuthor": {
-        "name": "Anthropic",
-        "email": "support@anthropic.com"
-      },
-      "sourceMarketplace": {
-        "slug": "claude-official",
-        "url": "https://github.com/anthropics/claude-plugins-official"
-      },
-      "source": "./plugins/example-plugin"
-    },
-    {
       "name": "explanatory-output-style",
       "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)",
       "author": {

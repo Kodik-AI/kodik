@@ -16,7 +16,6 @@
     "design-system"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
   "interface": {
     "displayName": "Figma",
     "shortDescription": "Design-to-code workflows powered by the Figma integration",

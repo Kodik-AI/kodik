@@ -6,16 +6,15 @@
       "args": [
         "-y",
         "@modelcontextprotocol/server-postgres",
-        "${env:POSTGRES_CONNECTION_STRING}"
-      ],
-      "disabled": true
+        "${user_config.connection_string}"
+      ]
     }
   },
   "meta": {
     "neon-postgres": {
       "id": "neon-postgres-mcp",
       "title": "neon-postgres",
-      "description": "Community MCP server for neon-postgres. Set the required env vars and flip disabled to false."
+      "description": "Postgres MCP. Paste a connection string from Neon (or any other Postgres) — the server runs SQL on its behalf."
     }
   }
 }

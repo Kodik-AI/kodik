@@ -17,7 +17,15 @@
     "planning"
   ],
   "skills": "./skills/",
-  "apps": "./.app.json",
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Notion integration secret",
+      "description": "Create an internal integration at https://www.notion.so/profile/integrations and paste its Internal Integration Secret.",
+      "sensitive": true,
+      "required": true
+    }
+  },
   "interface": {
     "displayName": "Notion",
     "shortDescription": "Notion workflows for specs, research, meetings, and knowledge capture",

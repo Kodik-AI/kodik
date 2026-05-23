@@ -9,16 +9,15 @@
         "--tools=all"
       ],
       "env": {
-        "STRIPE_SECRET_KEY": "${env:STRIPE_SECRET_KEY}"
-      },
-      "disabled": true
+        "STRIPE_SECRET_KEY": "${user_config.secret_key}"
+      }
     }
   },
   "meta": {
     "stripe": {
       "id": "stripe-mcp",
       "title": "stripe",
-      "description": "Community MCP server for stripe. Set the required env vars and flip disabled to false."
+      "description": "Official Stripe MCP. Paste an API key from https://dashboard.stripe.com/apikeys (test or live)."
     }
   }
 }
