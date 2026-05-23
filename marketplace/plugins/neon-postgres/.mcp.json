@@ -1,20 +1,15 @@
 {
   "servers": {
-    "neon-postgres": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-postgres",
-        "${user_config.connection_string}"
-      ]
+    "neon": {
+      "type": "http",
+      "url": "https://mcp.neon.tech/mcp"
     }
   },
   "meta": {
-    "neon-postgres": {
-      "id": "neon-postgres-mcp",
-      "title": "neon-postgres",
-      "description": "Postgres MCP. Paste a connection string from Neon (or any other Postgres) — the server runs SQL on its behalf."
+    "neon": {
+      "id": "neon-mcp",
+      "title": "neon",
+      "description": "Neon's official remote MCP. Sign in with your Neon account to manage projects, databases, and branches."
     }
   }
 }

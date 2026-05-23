@@ -1,23 +1,15 @@
 {
   "servers": {
     "supabase": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@supabase/mcp-server-supabase"
-      ],
-      "env": {
-        "SUPABASE_URL": "${user_config.project_url}",
-        "SUPABASE_ANON_KEY": "${user_config.anon_key}"
-      }
+      "type": "http",
+      "url": "https://mcp.supabase.com/mcp"
     }
   },
   "meta": {
     "supabase": {
       "id": "supabase-mcp",
       "title": "supabase",
-      "description": "Official Supabase MCP. Paste your project URL + anon/service-role key from Supabase project settings."
+      "description": "Supabase's official remote MCP (beta). Sign in with your Supabase account."
     }
   }
 }

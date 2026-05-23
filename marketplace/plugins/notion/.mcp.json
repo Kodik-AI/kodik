@@ -1,22 +1,15 @@
 {
   "servers": {
     "notion": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@notionhq/notion-mcp-server"
-      ],
-      "env": {
-        "NOTION_API_KEY": "${user_config.api_key}"
-      }
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp"
     }
   },
   "meta": {
     "notion": {
       "id": "notion-mcp",
       "title": "notion",
-      "description": "Community Notion MCP. Create an integration at https://www.notion.so/profile/integrations and paste its secret."
+      "description": "Notion's official remote MCP. Sign in with your Notion account."
     }
   }
 }

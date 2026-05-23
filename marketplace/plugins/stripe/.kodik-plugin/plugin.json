@@ -10,15 +10,6 @@
   "license": "MIT",
   "keywords": [],
   "skills": "./skills/",
-  "userConfig": {
-    "secret_key": {
-      "type": "string",
-      "title": "Stripe API key",
-      "description": "Paste an API key from https://dashboard.stripe.com/apikeys. Use a restricted key if you only need a subset of tools.",
-      "sensitive": true,
-      "required": true
-    }
-  },
   "interface": {
     "displayName": "Stripe",
     "developerName": "Stripe",

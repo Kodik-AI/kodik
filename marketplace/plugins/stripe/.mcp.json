@@ -1,23 +1,15 @@
 {
   "servers": {
     "stripe": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@stripe/mcp",
-        "--tools=all"
-      ],
-      "env": {
-        "STRIPE_SECRET_KEY": "${user_config.secret_key}"
-      }
+      "type": "http",
+      "url": "https://mcp.stripe.com/"
     }
   },
   "meta": {
     "stripe": {
       "id": "stripe-mcp",
       "title": "stripe",
-      "description": "Official Stripe MCP. Paste an API key from https://dashboard.stripe.com/apikeys (test or live)."
+      "description": "Stripe's official remote MCP. Sign in with your Stripe account."
     }
   }
 }
