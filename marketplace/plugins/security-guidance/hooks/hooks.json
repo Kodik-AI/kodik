@@ -9,7 +9,7 @@
             "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/security_reminder_hook.py\""
           }
         ],
-        "matcher": "Edit|Write|MultiEdit"
+        "matcher": "edit_file|edit_files"
       }
     ]
   }
