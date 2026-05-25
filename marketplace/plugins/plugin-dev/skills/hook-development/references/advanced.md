@@ -14,7 +14,7 @@ Combine command and prompt hooks for layered validation:
       "hooks": [
         {
           "type": "command",
-          "command": "bash ${CLAUDE_PLUGIN_ROOT}/scripts/quick-check.sh",
+          "command": "bash ${KODIK_PLUGIN_ROOT}/scripts/quick-check.sh",
           "timeout": 5
         },
         {
@@ -411,7 +411,7 @@ Create test scenarios that exercise the full hook workflow:
 
 # Set up test environment
 export CLAUDE_PROJECT_DIR="/tmp/test-project"
-export CLAUDE_PLUGIN_ROOT="$(pwd)"
+export KODIK_PLUGIN_ROOT="$(pwd)"
 mkdir -p "$CLAUDE_PROJECT_DIR"
 
 # Test SessionStart hook

@@ -53,7 +53,7 @@ Tests individual hook scripts with sample input before deploying to Claude Code.
 ```
 
 **Features:**
-- Sets up proper environment variables (CLAUDE_PROJECT_DIR, CLAUDE_PLUGIN_ROOT)
+- Sets up proper environment variables (CLAUDE_PROJECT_DIR, KODIK_PLUGIN_ROOT)
 - Measures execution time
 - Validates output JSON
 - Shows exit codes and their meanings
@@ -142,7 +142,7 @@ Checks hook scripts for common issues and best practices violations.
 Check:
 - Script has shebang (`#!/bin/bash`)
 - Script is executable (`chmod +x`)
-- Path in hooks.json is correct (use `${CLAUDE_PLUGIN_ROOT}`)
+- Path in hooks.json is correct (use `${KODIK_PLUGIN_ROOT}`)
 
 ### Hook times out
 

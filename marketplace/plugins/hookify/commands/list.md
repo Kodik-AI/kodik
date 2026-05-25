@@ -78,5 +78,5 @@ Example:
 /hookify Warn me when I use console.log
 ```
 
-Check `${CLAUDE_PLUGIN_ROOT}/examples/` for example rule files.
+Check `${KODIK_PLUGIN_ROOT}/examples/` for example rule files.
 ```

@@ -55,7 +55,7 @@ Use this workflow for structured, high-quality plugin development from concept t
 
 ### 1. hook-development
 
-**Trigger phrases:** "create a hook", "add a PreToolUse hook", "validate tool use", "implement prompt-based hooks", "${CLAUDE_PLUGIN_ROOT}", "block dangerous commands"
+**Trigger phrases:** "create a hook", "add a PreToolUse hook", "validate tool use", "implement prompt-based hooks", "${KODIK_PLUGIN_ROOT}", "block dangerous commands"
 
 **What it covers:**
 - Prompt-based hooks (recommended) with LLM decision-making
@@ -63,7 +63,7 @@ Use this workflow for structured, high-quality plugin development from concept t
 - All hook events: PreToolUse, PostToolUse, Stop, SubagentStop, SessionStart, SessionEnd, UserPromptSubmit, PreCompact, Notification
 - Hook output formats and JSON schemas
 - Security best practices and input validation
-- ${CLAUDE_PLUGIN_ROOT} for portable paths
+- ${KODIK_PLUGIN_ROOT} for portable paths
 
 **Resources:**
 - Core SKILL.md (1,619 words)
@@ -80,7 +80,7 @@ Use this workflow for structured, high-quality plugin development from concept t
 **What it covers:**
 - MCP server configuration (.mcp.json vs plugin.json)
 - All server types: stdio (local), SSE (hosted/OAuth), HTTP (REST), WebSocket (real-time)
-- Environment variable expansion (${CLAUDE_PLUGIN_ROOT}, user vars)
+- Environment variable expansion (${KODIK_PLUGIN_ROOT}, user vars)
 - MCP tool naming and usage in commands/agents
 - Authentication patterns: OAuth, tokens, env vars
 - Integration patterns and performance optimization
@@ -100,7 +100,7 @@ Use this workflow for structured, high-quality plugin development from concept t
 - Standard plugin directory structure and auto-discovery
 - plugin.json manifest format and all fields
 - Component organization (commands, agents, skills, hooks)
-- ${CLAUDE_PLUGIN_ROOT} usage throughout
+- ${KODIK_PLUGIN_ROOT} usage throughout
 - File naming conventions and best practices
 - Minimal, standard, and advanced plugin patterns
 
@@ -362,7 +362,7 @@ All skills emphasize:
 - Principle of least privilege
 
 ✅ **Portability**
-- Use ${CLAUDE_PLUGIN_ROOT} everywhere
+- Use ${KODIK_PLUGIN_ROOT} everywhere
 - Relative paths only
 - Environment variable substitution
 

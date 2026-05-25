@@ -172,4 +172,4 @@ Use Python regex syntax:
 
 5. Create more rules as you encounter unwanted behaviors
 
-For more examples, check the `${CLAUDE_PLUGIN_ROOT}/examples/` directory.
+For more examples, check the `${KODIK_PLUGIN_ROOT}/examples/` directory.
