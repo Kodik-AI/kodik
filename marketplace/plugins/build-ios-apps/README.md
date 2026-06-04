@@ -32,7 +32,7 @@ The plugin now lives at:
 
 with this shape:
 
-- `.codex-plugin/plugin.json`
+- `.kodik-plugin/plugin.json`
   - required plugin manifest
   - defines plugin metadata and points Codex at the plugin contents
 

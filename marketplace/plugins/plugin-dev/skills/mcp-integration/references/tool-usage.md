@@ -412,7 +412,7 @@ Ensure you're authenticated to Asana before running this command.
 ### Local Testing
 
 1. **Configure MCP server** in `.mcp.json`
-2. **Install plugin locally** in `.claude-plugin/`
+2. **Install plugin locally** in `.kodik-plugin/`
 3. **Verify tools available** with `/mcp`
 4. **Test command** that uses tools
 5. **Check debug output**: `claude --debug`

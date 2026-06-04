@@ -332,8 +332,9 @@ See `references/widget-templates.md` for more widget shapes.
 
 ```json
 {
-  "mcpServers": {
+  "servers": {
     "my-server": {
+      "type": "stdio",
       "command": "npx",
       "args": ["-y", "mcp-remote", "http://localhost:3000/mcp",
                "--allow-http", "--transport", "http-only"]

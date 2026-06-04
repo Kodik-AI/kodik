@@ -1,21 +1,23 @@
 {
-  "name": "telegram",
-  "description": "Telegram channel for your AI assistant — messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /telegram:access.",
+  "schemaVersion": 1,
+  "id": "telegram",
   "version": "0.0.6",
-  "keywords": [
+  "title": "telegram",
+  "description": "Telegram channel for your AI assistant — messaging bridge with built-in access control. Manage pairing, allowlists, and policy via /telegram:access.",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/telegram",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/telegram",
+  "tags": [
     "telegram",
     "messaging",
     "channel",
     "mcp"
   ],
-  "id": "telegram",
-  "author": {
-    "name": "Kodik"
-  },
-  "sourceMarketplace": {
-    "slug": "claude-official",
-    "url": "https://github.com/anthropics/claude-plugins-official"
-  },
+  "prompts": [],
   "userConfig": {
     "bot_token": {
       "type": "string",

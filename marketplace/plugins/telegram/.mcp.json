@@ -1,6 +1,7 @@
 {
-  "mcpServers": {
+  "servers": {
     "telegram": {
+      "type": "stdio",
       "command": "bun",
       "args": ["run", "--cwd", "${KODIK_PLUGIN_ROOT}", "--shell=bun", "--silent", "start"],
       "env": {
@@ -8,6 +9,13 @@
         "TELEGRAM_ACCESS_MODE": "${user_config.access_mode}",
         "TELEGRAM_STATE_DIR": "${user_config.state_dir}"
       }
+    }
+  },
+  "meta": {
+    "telegram": {
+      "id": "telegram",
+      "title": "Telegram",
+      "description": "Local MCP server for Telegram workflows using the bot token and access settings configured for this plugin."
     }
   }
 }

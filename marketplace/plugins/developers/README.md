@@ -4,11 +4,11 @@ This plugin is the Codex-facing bundle for OpenAI developer workflows. It pairs 
 
 ## What Is Included
 
-- `.codex-plugin/plugin.json` declares the Codex plugin metadata and user-facing `OpenAI Developers` brand.
+- `.kodik-plugin/plugin.json` declares the Codex plugin metadata and user-facing `OpenAI Developers` brand.
 - `.app.json` exposes the `openai-platform` app connector used to work with the OpenAI Platform.
 - `skills/openai-platform-api-key/` handles encrypted API-key creation and local project setup.
 - `skills/openai-api-troubleshooting/` classifies common runtime API failures and routes users to the right next step.
-- `assets/openai-platform.png` is intentionally shared by both the plugin tile and the bundled OpenAI Platform app tile.
+- `assets/app-icon.svg` is the canonical marketplace icon.
 - `skills/agents-sdk/` builds, runs, deploys and evaluates Agents SDK apps.
 - `skills/build-chatgpt-app/` scaffolds, refactors, and troubleshoots ChatGPT Apps SDK projects.
 - `skills/chatgpt-app-submission/` generates `chatgpt-app-submission.json` for ChatGPT Apps submissions.

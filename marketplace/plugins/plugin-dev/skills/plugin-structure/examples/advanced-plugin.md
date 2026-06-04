@@ -6,27 +6,24 @@ A complex, enterprise-grade plugin with MCP integration and advanced organizatio
 
 ```
 enterprise-devops/
-├── .claude-plugin/
+├── .kodik-plugin/
 │   └── plugin.json
+├── assets/
+│   └── app-icon.svg
 ├── commands/
-│   ├── ci/
-│   │   ├── build.md
-│   │   ├── test.md
-│   │   └── deploy.md
-│   ├── monitoring/
-│   │   ├── status.md
-│   │   └── logs.md
-│   └── admin/
-│       ├── configure.md
-│       └── manage.md
+│   ├── ci-build.md
+│   ├── ci-test.md
+│   ├── ci-deploy.md
+│   ├── monitoring-status.md
+│   ├── monitoring-logs.md
+│   ├── admin-configure.md
+│   └── admin-manage.md
 ├── agents/
-│   ├── orchestration/
-│   │   ├── deployment-orchestrator.md
-│   │   └── rollback-manager.md
-│   └── specialized/
-│       ├── kubernetes-expert.md
-│       ├── terraform-expert.md
-│       └── security-auditor.md
+│   ├── deployment-orchestrator.md
+│   ├── rollback-manager.md
+│   ├── kubernetes-expert.md
+│   ├── terraform-expert.md
+│   └── security-auditor.md
 ├── skills/
 │   ├── kubernetes-ops/
 │   │   ├── SKILL.md
@@ -100,25 +97,23 @@ enterprise-devops/
 
 ## File Contents
 
-### .claude-plugin/plugin.json
+### .kodik-plugin/plugin.json
 
 ```json
 {
-  "name": "enterprise-devops",
+  "schemaVersion": 1,
+  "id": "enterprise-devops",
   "version": "2.3.1",
+  "title": "Enterprise DevOps",
   "description": "Comprehensive DevOps automation for enterprise CI/CD pipelines, infrastructure management, and monitoring",
+  "category": "engineering",
+  "icon": "./assets/app-icon.svg",
   "author": {
-    "name": "DevOps Platform Team",
-    "email": "devops-platform@company.com",
-    "url": "https://company.com/teams/devops"
+    "name": "Kodik"
   },
-  "homepage": "https://docs.company.com/plugins/devops",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/company/devops-plugin.git"
-  },
-  "license": "Apache-2.0",
-  "keywords": [
+  "homepageUrl": "https://docs.company.com/plugins/devops",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/enterprise-devops",
+  "tags": [
     "devops",
     "ci-cd",
     "kubernetes",
@@ -128,17 +123,12 @@ enterprise-devops/
     "deployment",
     "monitoring"
   ],
-  "commands": [
-    "./commands/ci",
-    "./commands/monitoring",
-    "./commands/admin"
+  "prompts": [
+    "Review the deployment pipeline and identify reliability risks.",
+    "Investigate the current Kubernetes service health.",
+    "Prepare a rollback plan for the latest release."
   ],
-  "agents": [
-    "./agents/orchestration",
-    "./agents/specialized"
-  ],
-  "hooks": "./hooks/hooks.json",
-  "mcpServers": "./.mcp.json"
+  "userConfig": {}
 }
 ```
 
@@ -146,8 +136,9 @@ enterprise-devops/
 
 ```json
 {
-  "mcpServers": {
+  "servers": {
     "kubernetes": {
+      "type": "stdio",
       "command": "node",
       "args": ["${KODIK_PLUGIN_ROOT}/servers/kubernetes-mcp/index.js"],
       "env": {
@@ -156,6 +147,7 @@ enterprise-devops/
       }
     },
     "terraform": {
+      "type": "stdio",
       "command": "python",
       "args": ["${KODIK_PLUGIN_ROOT}/servers/terraform-mcp/main.py"],
       "env": {
@@ -164,6 +156,7 @@ enterprise-devops/
       }
     },
     "github-actions": {
+      "type": "stdio",
       "command": "node",
       "args": ["${KODIK_PLUGIN_ROOT}/servers/github-actions-mcp/server.js"],
       "env": {
@@ -171,11 +164,28 @@ enterprise-devops/
         "GITHUB_ORG": "${GITHUB_ORG}"
       }
     }
+  },
+  "meta": {
+    "kubernetes": {
+      "id": "kubernetes",
+      "title": "Kubernetes",
+      "description": "Local MCP server for Kubernetes cluster workflows."
+    },
+    "terraform": {
+      "id": "terraform",
+      "title": "Terraform",
+      "description": "Local MCP server for Terraform state and plan workflows."
+    },
+    "github-actions": {
+      "id": "github-actions",
+      "title": "GitHub Actions",
+      "description": "Local MCP server for CI workflow automation."
+    }
   }
 }
 ```
 
-### commands/ci/build.md
+### commands/ci-build.md
 
 ```markdown
 ---
@@ -222,7 +232,7 @@ After successful build:
 - Generate deployment checklist
 ```
 
-### agents/orchestration/deployment-orchestrator.md
+### agents/deployment-orchestrator.md
 
 ```markdown
 ---

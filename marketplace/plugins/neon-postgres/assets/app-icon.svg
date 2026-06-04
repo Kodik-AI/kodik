@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Neon Postgres icon">
+  <title>Neon Postgres</title>
+  <desc>Icon glyph source: Simple Icons neon</desc>
+  <rect width="64" height="64" rx="14" fill="#111827"/>
+  <svg x="14" y="14" width="36" height="36" viewBox="0 0 24 24" fill="#fff">
+    <path d="M24 0V24l-9.365-8.045V24H0V0ZM2.942 21.087h8.751V9.563l9.365 8.204V2.919L2.942 2.914Z"/>
+  </svg>
+</svg>

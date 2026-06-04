@@ -1,16 +1,17 @@
 {
-  "name": "pr-review-toolkit",
+  "schemaVersion": 1,
+  "id": "pr-review-toolkit",
+  "version": "1.0.0",
+  "title": "pr-review-toolkit",
   "description": "Comprehensive PR review agents specializing in comments, tests, error handling, type design, code quality, and code simplification",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "id": "pr-review-toolkit",
-  "originalAuthor": {
-    "name": "Anthropic",
-    "email": "support@anthropic.com"
-  },
-  "sourceMarketplace": {
-    "slug": "claude-official",
-    "url": "https://github.com/anthropics/claude-plugins-official"
-  }
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/pr-review-toolkit",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/pr-review-toolkit",
+  "tags": [],
+  "prompts": [],
+  "userConfig": {}
 }

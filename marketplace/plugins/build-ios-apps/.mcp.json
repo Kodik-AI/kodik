@@ -1,11 +1,19 @@
 {
-  "mcpServers": {
+  "servers": {
     "xcodebuildmcp": {
+      "type": "stdio",
       "command": "npx",
       "args": ["-y", "xcodebuildmcp@latest", "mcp"],
       "env": {
         "XCODEBUILDMCP_ENABLED_WORKFLOWS": "simulator,ui-automation,debugging,logging"
       }
+    }
+  },
+  "meta": {
+    "xcodebuildmcp": {
+      "id": "xcodebuildmcp",
+      "title": "XcodeBuildMCP",
+      "description": "Local MCP server for building, testing, debugging, and inspecting iOS apps with Xcode and simulators."
     }
   }
 }

@@ -1,8 +1,16 @@
 {
-  "mcpServers": {
+  "servers": {
     "imessage": {
+      "type": "stdio",
       "command": "bun",
       "args": ["run", "--cwd", "${KODIK_PLUGIN_ROOT}", "--shell=bun", "--silent", "start"]
+    }
+  },
+  "meta": {
+    "imessage": {
+      "id": "imessage",
+      "title": "iMessage",
+      "description": "Local MCP server for iMessage workflows on macOS."
     }
   }
 }

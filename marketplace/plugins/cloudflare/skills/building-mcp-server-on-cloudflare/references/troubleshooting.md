@@ -38,8 +38,9 @@ MCP uses SSE (Server-Sent Events), not WebSockets. Ensure your client is configu
 
 ```json
 {
-  "mcpServers": {
+  "servers": {
     "my-server": {
+      "type": "stdio",
       "command": "npx",
       "args": ["mcp-remote", "https://my-server.workers.dev/mcp"]
     }

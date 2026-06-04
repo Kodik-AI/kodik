@@ -1,25 +1,16 @@
 {
-  "name": "team-kit",
-  "displayName": "Cursor Team Kit",
+  "schemaVersion": 1,
+  "id": "team-kit",
   "version": "1.1.0",
+  "title": "Cursor Team Kit",
   "description": "Internal workflows used by your AI assistant developers for CI, code review, shipping, control-cli, control-ui, verify-this, test reliability, code cleanup, and work summaries. Designed to work without requiring third-party service integrations.",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "homepage": "https://github.com/cursor/plugins",
-  "repository": "https://github.com/cursor/plugins",
-  "license": "MIT",
-  "logo": "assets/avatar.png",
-  "keywords": [
-    "cursor-team-kit",
-    "ci",
-    "code-review",
-    "shipping",
-    "testing",
-    "verification",
-    "local-automation"
-  ],
-  "category": "developer-tools",
+  "homepageUrl": "https://github.com/cursor/plugins",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/team-kit",
   "tags": [
     "internal-workflows",
     "quality",
@@ -27,16 +18,6 @@
     "review",
     "automation"
   ],
-  "skills": "./skills/",
-  "agents": "./agents/",
-  "rules": "./rules/",
-  "id": "team-kit",
-  "originalAuthor": {
-    "name": "Cursor",
-    "email": "plugins@cursor.com"
-  },
-  "sourceMarketplace": {
-    "slug": "cursor-official",
-    "url": "https://github.com/cursor/plugins"
-  }
+  "prompts": [],
+  "userConfig": {}
 }

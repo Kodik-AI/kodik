@@ -10,7 +10,7 @@ It helps engineers evaluate a local skill or plugin, understand why it scored th
 ## What This Plugin Contains
 
 - `scripts/plugin-eval.js`: the CLI entrypoint exposed as `plugin-eval`
-- `.codex-plugin/plugin.json`: the Codex plugin manifest
+- `.kodik-plugin/plugin.json`: the Codex plugin manifest
 - `skills/`: the plugin's chat-facing skills
 
 The plugin is designed to feel chat-first in Codex, while still routing to explicit local commands you can run yourself.
@@ -130,7 +130,7 @@ Compatibility aliases still work:
 
 ## How It Works As A Codex Plugin
 
-This directory is also a Codex plugin bundle. The plugin manifest lives at [`.codex-plugin/plugin.json`](./.codex-plugin/plugin.json), and it exposes the skills under [`skills/`](./skills).
+This directory is also a Codex plugin bundle. The plugin manifest lives at [`.kodik-plugin/plugin.json`](./.kodik-plugin/plugin.json), and it exposes the skills under [`skills/`](./skills).
 
 That means you can use it from Codex chat with natural prompts once the plugin is installed, for example:
 
@@ -144,99 +144,30 @@ The plugin side is responsible for the chat UX and routing. The CLI side is resp
 
 ## Manual Plugin Installation
 
-Codex plugin discovery is marketplace-based. The plugin itself lives in a folder with a `.codex-plugin/plugin.json`, and Codex discovers it through a `marketplace.json` file.
+Kodik plugin discovery is marketplace-based. The plugin itself lives in a folder with `.kodik-plugin/plugin.json`, and Kodik discovers it through a marketplace manifest at `.kodik-plugin/marketplace.json`.
 
-The key path rule is:
-
-- in `~/.agents/plugins/marketplace.json`, `./plugins/plugin-eval` resolves to `~/plugins/plugin-eval`
-- in `<workspace>/.agents/plugins/marketplace.json`, `./plugins/plugin-eval` resolves to `<workspace>/plugins/plugin-eval`
-
-### Install For Your User Account
-
-This makes the plugin available across workspaces.
-
-1. Symlink this plugin directory into `~/plugins`:
-
-```bash
-mkdir -p ~/plugins ~/.agents/plugins
-ln -sfn /absolute/path/to/plugins/plugin-eval ~/plugins/plugin-eval
-```
-
-2. Create or update `~/.agents/plugins/marketplace.json`:
+For a local marketplace checkout, keep catalog entries source-only:
 
 ```json
 {
   "name": "local",
-  "interface": {
-    "displayName": "Local Plugins"
-  },
   "plugins": [
     {
       "name": "plugin-eval",
-      "source": {
-        "source": "local",
-        "path": "./plugins/plugin-eval"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Coding"
+      "source": "./plugins/plugin-eval"
     }
   ]
 }
 ```
 
-If you already have a marketplace file, append the `plugin-eval` entry instead of replacing the whole file.
-
-3. Restart Codex so it reloads the local marketplace.
-
-### Install For One Workspace Only
-
-This keeps the plugin scoped to a single repo or workspace.
-
-1. In the target workspace, symlink this plugin directory into `plugins/`:
-
-```bash
-mkdir -p /path/to/workspace/plugins /path/to/workspace/.agents/plugins
-ln -sfn /absolute/path/to/plugins/plugin-eval /path/to/workspace/plugins/plugin-eval
-```
-
-2. Create or update `/path/to/workspace/.agents/plugins/marketplace.json`:
-
-```json
-{
-  "name": "local-workspace",
-  "interface": {
-    "displayName": "Workspace Plugins"
-  },
-  "plugins": [
-    {
-      "name": "plugin-eval",
-      "source": {
-        "source": "local",
-        "path": "./plugins/plugin-eval"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Coding"
-    }
-  ]
-}
-```
-
-3. Restart Codex in that workspace if the plugin does not appear immediately.
-
-This repository already includes a workspace marketplace entry for `plugin-eval` in [`../../.agents/plugins/marketplace.json`](../../.agents/plugins/marketplace.json). If you reuse that file elsewhere, make sure `./plugins/plugin-eval` exists relative to the workspace root, or update the `source.path` accordingly.
+The plugin metadata comes from `plugins/plugin-eval/.kodik-plugin/plugin.json`; do not duplicate title, description, author, category, tags, or version in the marketplace entry.
 
 ## Use Cases
 
 Use `plugin-eval` when you want to:
 
 - evaluate a local skill directory or `SKILL.md`
-- evaluate a local plugin root that contains `.codex-plugin/plugin.json`
+- evaluate a local plugin root that contains `.kodik-plugin/plugin.json`
 - explain why a score came out the way it did
 - rank what to fix first
 - estimate budget before running live usage

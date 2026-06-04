@@ -1,16 +1,17 @@
 {
-  "name": "mcp-server-dev",
+  "schemaVersion": 1,
+  "id": "mcp-server-dev",
+  "version": "1.0.0",
+  "title": "mcp-server-dev",
   "description": "Skills for designing and building MCP servers that work seamlessly with your AI assistant — guides you through deployment models (remote HTTP, MCPB, local), tool design patterns, auth, and interactive MCP apps.",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "id": "mcp-server-dev",
-  "originalAuthor": {
-    "name": "Anthropic",
-    "email": "support@anthropic.com"
-  },
-  "sourceMarketplace": {
-    "slug": "claude-official",
-    "url": "https://github.com/anthropics/claude-plugins-official"
-  }
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/mcp-server-dev",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/mcp-server-dev",
+  "tags": [],
+  "prompts": [],
+  "userConfig": {}
 }

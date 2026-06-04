@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="agent-sdk-dev icon">
+  <title>agent-sdk-dev</title>
+  <desc>Icon glyph source: Simple Icons anthropic</desc>
+  <rect width="64" height="64" rx="14" fill="#191919"/>
+  <svg x="14" y="14" width="36" height="36" viewBox="0 0 24 24" fill="#fff">
+    <path d="M17.3041 3.541h-3.6718l6.696 16.918H24Zm-10.6082 0L0 20.459h3.7442l1.3693-3.5527h7.0052l1.3693 3.5528h3.7442L10.5363 3.5409Zm-.3712 10.2232 2.2914-5.9456 2.2914 5.9456Z"/>
+  </svg>
+</svg>

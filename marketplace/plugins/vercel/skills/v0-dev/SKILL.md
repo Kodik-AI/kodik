@@ -284,8 +284,9 @@ Connect v0 to any MCP-compatible IDE (Cursor, Codex, etc.):
 
 ```json
 {
-  "mcpServers": {
+  "servers": {
     "v0": {
+      "type": "stdio",
       "command": "npx",
       "args": [
         "mcp-remote",

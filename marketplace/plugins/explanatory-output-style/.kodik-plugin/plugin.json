@@ -1,17 +1,17 @@
 {
-  "name": "explanatory-output-style",
+  "schemaVersion": 1,
+  "id": "explanatory-output-style",
   "version": "1.0.0",
+  "title": "explanatory-output-style",
   "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "id": "explanatory-output-style",
-  "originalAuthor": {
-    "name": "Anthropic",
-    "email": "support@anthropic.com"
-  },
-  "sourceMarketplace": {
-    "slug": "claude-official",
-    "url": "https://github.com/anthropics/claude-plugins-official"
-  }
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/explanatory-output-style",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/explanatory-output-style",
+  "tags": [],
+  "prompts": [],
+  "userConfig": {}
 }

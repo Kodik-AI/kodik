@@ -18,19 +18,27 @@ Model Context Protocol (MCP) enables Claude Code plugins to integrate with exter
 
 ## MCP Server Configuration Methods
 
-Plugins can bundle MCP servers in two ways:
-
-### Method 1: Dedicated .mcp.json (Recommended)
+Official Kodik marketplace plugins should bundle MCP servers with a dedicated `.mcp.json` file at the plugin root. Keep the server definitions under the top-level `servers` key.
 
 Create `.mcp.json` at plugin root:
 
 ```json
 {
-  "database-tools": {
-    "command": "${KODIK_PLUGIN_ROOT}/servers/db-server",
-    "args": ["--config", "${KODIK_PLUGIN_ROOT}/config.json"],
-    "env": {
-      "DB_URL": "${DB_URL}"
+  "servers": {
+    "database-tools": {
+      "type": "stdio",
+      "command": "${KODIK_PLUGIN_ROOT}/servers/db-server",
+      "args": ["--config", "${KODIK_PLUGIN_ROOT}/config.json"],
+      "env": {
+        "DB_URL": "${DB_URL}"
+      }
+    }
+  },
+  "meta": {
+    "database-tools": {
+      "id": "database-tools",
+      "title": "Database Tools",
+      "description": "Local MCP server for database inspection and workflow automation."
     }
   }
 }
@@ -40,27 +48,9 @@ Create `.mcp.json` at plugin root:
 - Clear separation of concerns
 - Easier to maintain
 - Better for multiple servers
+- Matches the rest of the Kodik marketplace catalog
 
-### Method 2: Inline in plugin.json
-
-Add `mcpServers` field to plugin.json:
-
-```json
-{
-  "name": "my-plugin",
-  "version": "1.0.0",
-  "mcpServers": {
-    "plugin-api": {
-      "command": "${KODIK_PLUGIN_ROOT}/servers/api-server",
-      "args": ["--port", "8080"]
-    }
-  }
-}
-```
-
-**Benefits:**
-- Single configuration file
-- Good for simple single-server plugins
+Do not use the older `mcpServers` key in Kodik marketplace plugins. The plugin evaluator rejects both manifest-level `mcpServers` and `.mcp.json` files that use `mcpServers` instead of `servers`.
 
 ## MCP Server Types
 
@@ -71,11 +61,14 @@ Execute local MCP servers as child processes. Best for local tools and custom se
 **Configuration:**
 ```json
 {
-  "filesystem": {
-    "command": "npx",
-    "args": ["-y", "@modelcontextprotocol/server-filesystem", "/allowed/path"],
-    "env": {
-      "LOG_LEVEL": "debug"
+  "servers": {
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/allowed/path"],
+      "env": {
+        "LOG_LEVEL": "debug"
+      }
     }
   }
 }
@@ -99,9 +92,11 @@ Connect to hosted MCP servers with OAuth support. Best for cloud services.
 **Configuration:**
 ```json
 {
-  "asana": {
-    "type": "sse",
-    "url": "https://mcp.asana.com/sse"
+  "servers": {
+    "asana": {
+      "type": "sse",
+      "url": "https://mcp.asana.com/sse"
+    }
   }
 }
 ```
@@ -124,12 +119,14 @@ Connect to RESTful MCP servers with token authentication.
 **Configuration:**
 ```json
 {
-  "api-service": {
-    "type": "http",
-    "url": "https://api.example.com/mcp",
-    "headers": {
-      "Authorization": "Bearer ${API_TOKEN}",
-      "X-Custom-Header": "value"
+  "servers": {
+    "api-service": {
+      "type": "http",
+      "url": "https://api.example.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${API_TOKEN}",
+        "X-Custom-Header": "value"
+      }
     }
   }
 }
@@ -148,11 +145,13 @@ Connect to WebSocket MCP servers for real-time bidirectional communication.
 **Configuration:**
 ```json
 {
-  "realtime-service": {
-    "type": "ws",
-    "url": "wss://mcp.example.com/ws",
-    "headers": {
-      "Authorization": "Bearer ${TOKEN}"
+  "servers": {
+    "realtime-service": {
+      "type": "ws",
+      "url": "wss://mcp.example.com/ws",
+      "headers": {
+        "Authorization": "Bearer ${TOKEN}"
+      }
     }
   }
 }
@@ -246,8 +245,12 @@ OAuth handled automatically by Claude Code:
 
 ```json
 {
-  "type": "sse",
-  "url": "https://mcp.example.com/sse"
+  "servers": {
+    "example": {
+      "type": "sse",
+      "url": "https://mcp.example.com/sse"
+    }
+  }
 }
 ```
 
@@ -259,10 +262,14 @@ Static or environment variable tokens:
 
 ```json
 {
-  "type": "http",
-  "url": "https://api.example.com",
-  "headers": {
-    "Authorization": "Bearer ${API_TOKEN}"
+  "servers": {
+    "api-service": {
+      "type": "http",
+      "url": "https://api.example.com",
+      "headers": {
+        "Authorization": "Bearer ${API_TOKEN}"
+      }
+    }
   }
 }
 ```
@@ -275,12 +282,17 @@ Pass configuration to MCP server:
 
 ```json
 {
-  "command": "python",
-  "args": ["-m", "my_mcp_server"],
-  "env": {
-    "DATABASE_URL": "${DB_URL}",
-    "API_KEY": "${API_KEY}",
-    "LOG_LEVEL": "info"
+  "servers": {
+    "database-tools": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "my_mcp_server"],
+      "env": {
+        "DATABASE_URL": "${DB_URL}",
+        "API_KEY": "${API_KEY}",
+        "LOG_LEVEL": "info"
+      }
+    }
   }
 }
 ```
@@ -326,13 +338,15 @@ Integrate multiple MCP servers:
 
 ```json
 {
-  "github": {
-    "type": "sse",
-    "url": "https://mcp.github.com/sse"
-  },
-  "jira": {
-    "type": "sse",
-    "url": "https://mcp.jira.com/sse"
+  "servers": {
+    "github": {
+      "type": "sse",
+      "url": "https://mcp.github.com/sse"
+    },
+    "jira": {
+      "type": "sse",
+      "url": "https://mcp.jira.com/sse"
+    }
   }
 }
 ```
@@ -425,7 +439,7 @@ for id in task_ids:
 ### Local Testing
 
 1. Configure MCP server in `.mcp.json`
-2. Install plugin locally (`.claude-plugin/`)
+2. Install plugin locally (`.kodik-plugin/`)
 3. Run `/mcp` to verify server appears
 4. Test tool calls in commands
 5. Check `claude --debug` logs for connection issues

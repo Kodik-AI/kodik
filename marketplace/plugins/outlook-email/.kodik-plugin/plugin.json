@@ -1,48 +1,23 @@
 {
-  "name": "outlook-email",
+  "schemaVersion": 1,
+  "id": "outlook-email",
   "version": "0.1.0",
+  "title": "Outlook Email",
   "description": "Work with Outlook Email using the configured Microsoft Outlook app connector.",
+  "category": "productivity",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "homepage": "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook",
-  "repository": "https://github.com/openai/plugins",
-  "license": "MIT",
-  "keywords": [
+  "homepageUrl": "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/outlook-email",
+  "tags": [
     "outlook-email",
     "email",
     "microsoft"
   ],
-  "skills": "./skills/",
-  "interface": {
-    "displayName": "Outlook Email",
-    "shortDescription": "Triage Outlook inboxes and draft replies",
-    "longDescription": "Use Outlook Email to triage inboxes, summarize threads, extract actions, and draft replies or forwards through the connected Microsoft Outlook app.",
-    "developerName": "OpenAI",
-    "category": "Productivity",
-    "capabilities": [
-      "Interactive",
-      "Write"
-    ],
-    "websiteURL": "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook",
-    "privacyPolicyURL": "https://www.microsoft.com/en-us/privacy/privacystatement",
-    "termsOfServiceURL": "https://www.microsoft.com/en-us/servicesagreement/",
-    "defaultPrompt": [
-      "Triage inbox, summarize thread, or draft reply or forward"
-    ],
-    "brandColor": "#0078D4",
-    "composerIcon": "./assets/app-icon.png",
-    "logo": "./assets/app-icon.png",
-    "screenshots": []
-  },
-  "id": "outlook-email",
-  "originalAuthor": {
-    "name": "OpenAI",
-    "email": "support@openai.com",
-    "url": "https://openai.com/"
-  },
-  "sourceMarketplace": {
-    "slug": "openai-codex",
-    "url": "https://github.com/openai/plugins"
-  }
+  "prompts": [
+    "Triage inbox, summarize thread, or draft reply or forward"
+  ],
+  "userConfig": {}
 }

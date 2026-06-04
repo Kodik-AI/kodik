@@ -6,8 +6,10 @@ A well-structured plugin with commands, agents, and skills.
 
 ```
 code-quality/
-├── .claude-plugin/
+├── .kodik-plugin/
 │   └── plugin.json
+├── assets/
+│   └── app-icon.svg
 ├── commands/
 │   ├── lint.md
 │   ├── test.md
@@ -36,21 +38,28 @@ code-quality/
 
 ## File Contents
 
-### .claude-plugin/plugin.json
+### .kodik-plugin/plugin.json
 
 ```json
 {
-  "name": "code-quality",
+  "schemaVersion": 1,
+  "id": "code-quality",
   "version": "1.0.0",
+  "title": "Code Quality",
   "description": "Comprehensive code quality tools including linting, testing, and review automation",
+  "category": "coding",
+  "icon": "./assets/app-icon.svg",
   "author": {
-    "name": "Quality Team",
-    "email": "quality@example.com"
+    "name": "Kodik"
   },
-  "homepage": "https://docs.example.com/plugins/code-quality",
-  "repository": "https://github.com/example/code-quality-plugin",
-  "license": "MIT",
-  "keywords": ["code-quality", "linting", "testing", "code-review", "automation"]
+  "homepageUrl": "https://docs.example.com/plugins/code-quality",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/code-quality",
+  "tags": ["code-quality", "linting", "testing", "code-review", "automation"],
+  "prompts": [
+    "Review this repository for code quality issues.",
+    "Run the test workflow and summarize failures."
+  ],
+  "userConfig": {}
 }
 ```
 

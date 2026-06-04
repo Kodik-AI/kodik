@@ -29,13 +29,13 @@ const APPLIED_OPENAI_DOCS_SKILL = path.resolve(
   __dirname,
   "../../../lib/applied/applied_skills/applied_skills/example_skills/openai-docs/current/SKILL.md",
 );
+const MANIFEST = path.resolve(
+  __dirname,
+  "../.kodik-plugin/plugin.json",
+);
 const PLUGIN_ICON = path.resolve(
   __dirname,
-  "../assets/openai-platform.png",
-);
-const APP_ICON = path.resolve(
-  __dirname,
-  "../../../chatgpt/web/public/images/ecosystem/apps/openai_platform/icon.png",
+  "../assets/app-icon.svg",
 );
 const SECRET = "sk-proj-test-secret-value";
 
@@ -101,13 +101,12 @@ test("skill documents connector install and retry preflight", () => {
   assert.match(skill, /retry `tool_search`/);
 });
 
-test("plugin and app tiles use the same OpenAI Platform logo", (t) => {
-  if (!fs.existsSync(APP_ICON)) {
-    t.skip("monorepo OpenAI Platform app icon is not available in this repository");
-    return;
-  }
+test("plugin manifest uses the canonical SVG app icon", () => {
+  const manifest = JSON.parse(fs.readFileSync(MANIFEST, "utf8"));
+  const icon = fs.readFileSync(PLUGIN_ICON, "utf8");
 
-  assert.deepEqual(fs.readFileSync(PLUGIN_ICON), fs.readFileSync(APP_ICON));
+  assert.equal(manifest.icon, "./assets/app-icon.svg");
+  assert.match(icon, /^<svg\b/);
 });
 
 test("skill asks before building API-backed apps when any usable key exists", () => {

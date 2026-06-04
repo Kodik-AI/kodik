@@ -12,10 +12,10 @@ Claude Code plugins follow a standardized directory structure with automatic com
 
 **Key concepts:**
 - Conventional directory layout for automatic discovery
-- Manifest-driven configuration in `.claude-plugin/plugin.json`
+- Manifest-driven configuration in `.kodik-plugin/plugin.json`
 - Component-based organization (commands, agents, skills, hooks)
 - Portable path references using `${KODIK_PLUGIN_ROOT}`
-- Explicit vs. auto-discovered component loading
+- Convention-based component loading
 
 ## Directory Structure
 
@@ -23,7 +23,7 @@ Every Claude Code plugin follows this organizational pattern:
 
 ```
 plugin-name/
-├── .claude-plugin/
+├── .kodik-plugin/
 │   └── plugin.json          # Required: Plugin manifest
 ├── commands/                 # Slash commands (.md files)
 ├── agents/                   # Subagent definitions (.md files)
@@ -38,72 +38,52 @@ plugin-name/
 
 **Critical rules:**
 
-1. **Manifest location**: The `plugin.json` manifest MUST be in `.claude-plugin/` directory
-2. **Component locations**: All component directories (commands, agents, skills, hooks) MUST be at plugin root level, NOT nested inside `.claude-plugin/`
+1. **Manifest location**: The `plugin.json` manifest MUST be in `.kodik-plugin/` directory
+2. **Component locations**: All component directories (commands, agents, skills, hooks) MUST be at plugin root level, NOT nested inside `.kodik-plugin/`
 3. **Optional components**: Only create directories for components the plugin actually uses
 4. **Naming convention**: Use kebab-case for all directory and file names
 
 ## Plugin Manifest (plugin.json)
 
-The manifest defines plugin metadata and configuration. Located at `.claude-plugin/plugin.json`:
+The manifest defines plugin metadata and configuration. Located at `.kodik-plugin/plugin.json`:
 
-### Required Fields
+### Required Flat Fields
 
 ```json
 {
-  "name": "plugin-name"
+  "schemaVersion": 1,
+  "id": "plugin-name",
+  "version": "1.0.0",
+  "title": "Plugin Name",
+  "description": "Brief explanation of plugin purpose.",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://example.com/plugin",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/plugin-name",
+  "tags": ["automation"],
+  "prompts": [],
+  "userConfig": {}
 }
 ```
 
-**Name requirements:**
+**ID requirements:**
 - Use kebab-case format (lowercase with hyphens)
 - Must be unique across installed plugins
+- Must match the plugin directory name
 - No spaces or special characters
 - Example: `code-review-assistant`, `test-runner`, `api-docs`
 
-### Recommended Metadata
+**Manifest rules:**
 
-```json
-{
-  "name": "plugin-name",
-  "version": "1.0.0",
-  "description": "Brief explanation of plugin purpose",
-  "author": {
-    "name": "Author Name",
-    "email": "author@example.com",
-    "url": "https://example.com"
-  },
-  "homepage": "https://docs.example.com",
-  "repository": "https://github.com/user/plugin-name",
-  "license": "MIT",
-  "keywords": ["testing", "automation", "ci-cd"]
-}
-```
-
-**Version format**: Follow semantic versioning (MAJOR.MINOR.PATCH)
-**Keywords**: Use for plugin discovery and categorization
-
-### Component Path Configuration
-
-Specify custom paths for components (supplements default directories):
-
-```json
-{
-  "name": "plugin-name",
-  "commands": "./custom-commands",
-  "agents": ["./agents", "./specialized-agents"],
-  "hooks": "./config/hooks.json",
-  "mcpServers": "./.mcp.json"
-}
-```
-
-**Important**: Custom paths supplement defaults—they don't replace them. Components in both default directories and custom paths will load.
-
-**Path rules:**
-- Must be relative to plugin root
-- Must start with `./`
-- Cannot use absolute paths
-- Support arrays for multiple locations
+- `category` must use one of the official lower-kebab ids: `coding`, `developer-tools`, `productivity`, `design`, `engineering`, `research`, `api-integrations`, or `utilities`.
+- `icon` must be exactly `./assets/app-icon.svg`.
+- `author` is `{ "name": "Kodik" }` for official marketplace plugins.
+- `tags`, `prompts`, and `userConfig` are always present; use `[]` or `{}` when empty.
+- Do not add component path fields such as `skills`, `agents`, `commands`, `rules`, or `hooks`.
+- Do not add import-only fields such as `originalAuthor`, `sourceMarketplace`, `keywords`, `repository`, `license`, or `interface`.
 
 ## Component Organization
 
@@ -111,7 +91,7 @@ Specify custom paths for components (supplements default directories):
 
 **Location**: `commands/` directory
 **Format**: Markdown files with YAML frontmatter
-**Auto-discovery**: All `.md` files in `commands/` load automatically
+**Auto-discovery**: Top-level `.md` files in `commands/` load automatically
 
 **Example structure**:
 ```
@@ -137,7 +117,7 @@ Command implementation instructions...
 
 **Location**: `agents/` directory
 **Format**: Markdown files with YAML frontmatter
-**Auto-discovery**: All `.md` files in `agents/` load automatically
+**Auto-discovery**: Top-level `.md` files in `agents/` load automatically
 
 **Example structure**:
 ```
@@ -232,20 +212,28 @@ hooks/
 
 ### MCP Servers
 
-**Location**: `.mcp.json` at plugin root or inline in `plugin.json`
-**Format**: JSON configuration for MCP server definitions
+**Location**: `.mcp.json` at plugin root
+**Format**: JSON configuration with MCP server definitions under `servers`
 **Auto-start**: Servers start automatically when plugin enables
 
 **Example format**:
 ```json
 {
-  "mcpServers": {
+  "servers": {
     "server-name": {
+      "type": "stdio",
       "command": "node",
       "args": ["${KODIK_PLUGIN_ROOT}/servers/server.js"],
       "env": {
         "API_KEY": "${API_KEY}"
       }
+    }
+  },
+  "meta": {
+    "server-name": {
+      "id": "server-name",
+      "title": "Server Name",
+      "description": "Short user-facing description of this MCP server."
     }
   }
 }
@@ -338,21 +326,21 @@ source "${KODIK_PLUGIN_ROOT}/lib/common.sh"
 
 ## Auto-Discovery Mechanism
 
-Claude Code automatically discovers and loads components:
+Kodik automatically discovers and loads components:
 
-1. **Plugin manifest**: Reads `.claude-plugin/plugin.json` when plugin enables
+1. **Plugin manifest**: Reads `.kodik-plugin/plugin.json` when plugin enables
 2. **Commands**: Scans `commands/` directory for `.md` files
 3. **Agents**: Scans `agents/` directory for `.md` files
 4. **Skills**: Scans `skills/` for subdirectories containing `SKILL.md`
-5. **Hooks**: Loads configuration from `hooks/hooks.json` or manifest
-6. **MCP servers**: Loads configuration from `.mcp.json` or manifest
+5. **Hooks**: Loads configuration from `hooks/hooks.json`
+6. **MCP servers**: Loads configuration from the root `.mcp.json`
 
 **Discovery timing**:
-- Plugin installation: Components register with Claude Code
+- Plugin installation: Components register with Kodik
 - Plugin enable: Components become available for use
-- No restart required: Changes take effect on next Claude Code session
+- No restart required: Changes take effect on the next Kodik session
 
-**Override behavior**: Custom paths in `plugin.json` supplement (not replace) default directories
+**Override behavior**: Component path overrides are not supported; use the conventional root directories.
 
 ## Best Practices
 
@@ -362,10 +350,10 @@ Claude Code automatically discovers and loads components:
    - Put test-related commands, agents, and skills together
    - Create subdirectories in `scripts/` for different purposes
 
-2. **Minimal manifest**: Keep `plugin.json` lean
-   - Only specify custom paths when necessary
+2. **Canonical manifest**: Keep `plugin.json` flat
+   - Use only the v1 manifest fields
    - Rely on auto-discovery for standard layouts
-   - Use inline configuration only for simple cases
+   - Put MCP server definitions in `.mcp.json`
 
 3. **Documentation**: Include README files
    - Plugin root: Overall purpose and usage
@@ -408,8 +396,8 @@ Claude Code automatically discovers and loads components:
 Single command with no dependencies:
 ```
 my-plugin/
-├── .claude-plugin/
-│   └── plugin.json    # Just name field
+├── .kodik-plugin/
+│   └── plugin.json    # Canonical flat manifest
 └── commands/
     └── hello.md       # Single command
 ```
@@ -419,7 +407,7 @@ my-plugin/
 Complete plugin with all component types:
 ```
 my-plugin/
-├── .claude-plugin/
+├── .kodik-plugin/
 │   └── plugin.json
 ├── commands/          # User-facing commands
 ├── agents/            # Specialized subagents
@@ -436,7 +424,7 @@ my-plugin/
 Plugin providing only skills:
 ```
 my-plugin/
-├── .claude-plugin/
+├── .kodik-plugin/
 │   └── plugin.json
 └── skills/
     ├── skill-one/
@@ -455,14 +443,14 @@ my-plugin/
 
 **Path resolution errors**:
 - Replace all hardcoded paths with `${KODIK_PLUGIN_ROOT}`
-- Verify paths are relative and start with `./` in manifest
+- Keep plugin component paths in their conventional root directories
 - Check that referenced files exist at specified paths
 - Test with `echo $KODIK_PLUGIN_ROOT` in hook scripts
 
 **Auto-discovery not working**:
-- Confirm directories are at plugin root (not in `.claude-plugin/`)
+- Confirm directories are at plugin root (not in `.kodik-plugin/`)
 - Check file naming follows conventions (kebab-case, correct extensions)
-- Verify custom paths in manifest are correct
+- Remove any manifest path overrides; component discovery is convention-only
 - Restart Claude Code to reload plugin configuration
 
 **Conflicts between plugins**:

@@ -1,14 +1,17 @@
 {
-  "name": "vercel",
+  "schemaVersion": 1,
+  "id": "vercel",
   "version": "0.21.0",
+  "title": "Vercel",
   "description": "Build and deploy web apps and agents",
+  "category": "coding",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "homepage": "https://vercel.com/",
-  "repository": "https://github.com/vercel/vercel-plugin",
-  "license": "Apache-2.0",
-  "keywords": [
+  "homepageUrl": "https://vercel.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/vercel",
+  "tags": [
     "vercel",
     "nextjs",
     "ai-sdk",
@@ -24,37 +27,10 @@
     "slack-bot",
     "discord-bot"
   ],
-  "skills": "./skills/",
-  "interface": {
-    "displayName": "Vercel",
-    "shortDescription": "Build and deploy web apps and agents",
-    "longDescription": "Bring Vercel ecosystem guidance into Codex with curated skills and the connected Vercel app. Packages the upstream vercel/vercel-plugin skills, agents, and commands under the local `vercel` plugin identity for the Codex plugin marketplace.",
-    "developerName": "Vercel Labs",
-    "category": "Coding",
-    "capabilities": [
-      "Interactive",
-      "Write"
-    ],
-    "websiteURL": "https://vercel.com/",
-    "privacyPolicyURL": "https://vercel.com/legal/privacy-policy",
-    "termsOfServiceURL": "https://vercel.com/legal/terms",
-    "defaultPrompt": [
-      "Audit this repo for Vercel deployment risks",
-      "Which Vercel tools fit this app best",
-      "Help wire the Vercel app into this workflow"
-    ],
-    "composerIcon": "./assets/app-icon.png",
-    "logo": "./assets/app-icon.png",
-    "screenshots": [],
-    "brandColor": "#000000"
-  },
-  "id": "vercel",
-  "originalAuthor": {
-    "name": "Vercel Labs",
-    "url": "https://github.com/vercel"
-  },
-  "sourceMarketplace": {
-    "slug": "openai-codex",
-    "url": "https://github.com/openai/plugins"
-  }
+  "prompts": [
+    "Audit this repo for Vercel deployment risks",
+    "Which Vercel tools fit this app best",
+    "Help wire the Vercel app into this workflow"
+  ],
+  "userConfig": {}
 }

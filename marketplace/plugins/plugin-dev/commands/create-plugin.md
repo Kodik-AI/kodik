@@ -141,27 +141,37 @@ Guide the user through creating a complete, high-quality Claude Code plugin from
    - Offer options: current directory, ../new-plugin-name, custom path
 3. Create directory structure using bash:
    ```bash
-   mkdir -p plugin-name/.claude-plugin
-   mkdir -p plugin-name/skills/<skill-name>   # one dir per skill, each with a SKILL.md
+	   mkdir -p plugin-name/.kodik-plugin
+	   mkdir -p plugin-name/assets
+	   mkdir -p plugin-name/skills/<skill-name>   # one dir per skill, each with a SKILL.md
    mkdir -p plugin-name/agents                # if needed
    mkdir -p plugin-name/hooks                 # if needed
    # Note: plugin-name/commands/ is a legacy alternative to skills/ — prefer skills/
    ```
 4. Create plugin.json manifest using Write tool:
-   ```json
-   {
-     "name": "plugin-name",
-     "version": "0.1.0",
-     "description": "[brief description]",
-     "author": {
-       "name": "[author from user or default]",
-       "email": "[email or default]"
-     }
-   }
-   ```
-5. Create README.md template
-6. Create .gitignore if needed (for .claude/\*.local.md, etc.)
-7. Initialize git repo if creating new directory
+	   ```json
+	   {
+	     "schemaVersion": 1,
+	     "id": "plugin-name",
+	     "version": "1.0.0",
+	     "title": "Plugin Name",
+	     "description": "[brief description]",
+	     "category": "developer-tools",
+	     "icon": "./assets/app-icon.svg",
+	     "author": {
+	       "name": "Kodik"
+	     },
+	     "homepageUrl": "[homepage or plugin source URL]",
+	     "sourceUrl": "[plugin source URL]",
+	     "tags": [],
+	     "prompts": [],
+	     "userConfig": {}
+	   }
+	   ```
+	5. Create `assets/app-icon.svg`
+	6. Create README.md template
+	7. Create .gitignore if needed (for .kodik/\*.local.md, etc.)
+	8. Initialize git repo if creating new directory
 
 **Output**: Plugin directory structure created and ready for components
 
@@ -309,7 +319,7 @@ Guide the user through creating a complete, high-quality Claude Code plugin from
      ```bash
      cc --plugin-dir /path/to/plugin-name
      ```
-   - Or copy to `.claude-plugin/` for project testing
+   - Or copy to `.kodik-plugin/` for project testing
 
 2. **Verification checklist** for user to perform:
    - [ ] Skills load when triggered (ask questions with trigger phrases)

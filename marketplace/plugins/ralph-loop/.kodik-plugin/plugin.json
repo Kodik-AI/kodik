@@ -1,17 +1,17 @@
 {
-  "name": "ralph-loop",
+  "schemaVersion": 1,
+  "id": "ralph-loop",
   "version": "1.0.0",
+  "title": "ralph-loop",
   "description": "Continuous self-referential AI loops for interactive iterative development, implementing the Ralph Wiggum technique. Run your AI assistant in a while-true loop with the same prompt until task completion.",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "id": "ralph-loop",
-  "originalAuthor": {
-    "name": "Anthropic",
-    "email": "support@anthropic.com"
-  },
-  "sourceMarketplace": {
-    "slug": "claude-official",
-    "url": "https://github.com/anthropics/claude-plugins-official"
-  }
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/ralph-loop",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/ralph-loop",
+  "tags": [],
+  "prompts": [],
+  "userConfig": {}
 }

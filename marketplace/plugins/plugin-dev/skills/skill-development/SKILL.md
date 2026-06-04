@@ -254,7 +254,7 @@ Plugin skills live in the plugin's `skills/` directory:
 
 ```
 my-plugin/
-├── .claude-plugin/
+├── .kodik-plugin/
 │   └── plugin.json
 ├── commands/
 ├── agents/

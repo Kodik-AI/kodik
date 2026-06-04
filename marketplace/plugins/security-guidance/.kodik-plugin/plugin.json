@@ -1,16 +1,17 @@
 {
-  "name": "security-guidance",
+  "schemaVersion": 1,
+  "id": "security-guidance",
+  "version": "1.0.0",
+  "title": "security-guidance",
   "description": "Security reminder hook that warns about potential security issues when editing files, including command injection, XSS, and unsafe code patterns",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "id": "security-guidance",
-  "originalAuthor": {
-    "name": "Anthropic",
-    "email": "support@anthropic.com"
-  },
-  "sourceMarketplace": {
-    "slug": "claude-official",
-    "url": "https://github.com/anthropics/claude-plugins-official"
-  }
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/security-guidance",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/security-guidance",
+  "tags": [],
+  "prompts": [],
+  "userConfig": {}
 }

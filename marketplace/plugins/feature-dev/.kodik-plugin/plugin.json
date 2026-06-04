@@ -1,16 +1,17 @@
 {
-  "name": "feature-dev",
+  "schemaVersion": 1,
+  "id": "feature-dev",
+  "version": "1.0.0",
+  "title": "feature-dev",
   "description": "Comprehensive feature development workflow with specialized agents for codebase exploration, architecture design, and quality review",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "id": "feature-dev",
-  "originalAuthor": {
-    "name": "Anthropic",
-    "email": "support@anthropic.com"
-  },
-  "sourceMarketplace": {
-    "slug": "claude-official",
-    "url": "https://github.com/anthropics/claude-plugins-official"
-  }
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/feature-dev",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/feature-dev",
+  "tags": [],
+  "prompts": [],
+  "userConfig": {}
 }

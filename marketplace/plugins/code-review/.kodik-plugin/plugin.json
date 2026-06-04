@@ -1,16 +1,17 @@
 {
-  "name": "code-review",
+  "schemaVersion": 1,
+  "id": "code-review",
+  "version": "1.0.0",
+  "title": "code-review",
   "description": "Automated code review for pull requests using multiple specialized agents with confidence-based scoring",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "id": "code-review",
-  "originalAuthor": {
-    "name": "Anthropic",
-    "email": "support@anthropic.com"
-  },
-  "sourceMarketplace": {
-    "slug": "claude-official",
-    "url": "https://github.com/anthropics/claude-plugins-official"
-  }
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/code-review",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/code-review",
+  "tags": [],
+  "prompts": [],
+  "userConfig": {}
 }

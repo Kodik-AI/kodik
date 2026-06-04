@@ -15,7 +15,7 @@ export async function resolveTarget(inputPath) {
     }
     if (
       path.basename(resolvedPath) === "plugin.json" &&
-      path.basename(path.dirname(resolvedPath)) === ".codex-plugin"
+      path.basename(path.dirname(resolvedPath)) === ".kodik-plugin"
     ) {
       return {
         kind: "plugin",
@@ -37,7 +37,7 @@ export async function resolveTarget(inputPath) {
     throw new Error(`Target path does not exist: ${resolvedPath}`);
   }
 
-  const pluginManifestPath = path.join(resolvedPath, ".codex-plugin", "plugin.json");
+  const pluginManifestPath = path.join(resolvedPath, ".kodik-plugin", "plugin.json");
   if (await pathExists(pluginManifestPath)) {
     return {
       kind: "plugin",
@@ -66,8 +66,7 @@ export async function resolveTarget(inputPath) {
 }
 
 export async function discoverPluginSkillDirectories(pluginRoot, manifest) {
-  const configuredPath = manifest?.skills ? manifest.skills.replace(/^\.\//, "") : "skills";
-  const skillsRoot = path.join(pluginRoot, configuredPath);
+  const skillsRoot = path.join(pluginRoot, "skills");
   if (!(await isDirectory(skillsRoot))) {
     return [];
   }
@@ -84,6 +83,6 @@ export async function discoverPluginSkillDirectories(pluginRoot, manifest) {
 }
 
 export async function loadPluginManifest(pluginRoot) {
-  const manifestPath = path.join(pluginRoot, ".codex-plugin", "plugin.json");
+  const manifestPath = path.join(pluginRoot, ".kodik-plugin", "plugin.json");
   return readJson(manifestPath);
 }

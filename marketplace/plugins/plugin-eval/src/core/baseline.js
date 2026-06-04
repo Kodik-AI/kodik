@@ -83,7 +83,7 @@ async function collectPluginSamples(pluginRoot) {
   const directories = await listImmediateDirectories(pluginRoot);
   const samples = [];
   for (const directory of directories) {
-    const manifestPath = path.join(directory, ".codex-plugin", "plugin.json");
+    const manifestPath = path.join(directory, ".kodik-plugin", "plugin.json");
     if (!(await pathExists(manifestPath))) {
       continue;
     }

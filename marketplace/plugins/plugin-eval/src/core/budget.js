@@ -95,11 +95,9 @@ export async function computeSkillBudget(skillRoot) {
 }
 
 export async function computePluginBudget(pluginRoot, manifest) {
-  const manifestPath = path.join(pluginRoot, ".codex-plugin", "plugin.json");
+  const manifestPath = path.join(pluginRoot, ".kodik-plugin", "plugin.json");
   const manifestContent = await readText(manifestPath);
-  const skillDirs = manifest?.skills
-    ? await discoverSkillDirs(pluginRoot, manifest.skills)
-    : await discoverSkillDirs(pluginRoot, "./skills/");
+  const skillDirs = await discoverSkillDirs(pluginRoot, "./skills/");
 
   const triggerComponents = [
     createComponent(
@@ -111,7 +109,7 @@ export async function computePluginBudget(pluginRoot, manifest) {
     createComponent(
       "default-prompts",
       manifestPath,
-      estimateTokenCount((manifest?.interface?.defaultPrompt || []).join("\n")),
+      estimateTokenCount((manifest?.prompts || []).join("\n")),
       "Starter prompts visible in the UI",
     ),
   ];
@@ -167,8 +165,8 @@ export async function computePluginBudget(pluginRoot, manifest) {
   };
 }
 
-async function discoverSkillDirs(pluginRoot, skillsPath) {
-  const directory = path.join(pluginRoot, skillsPath.replace(/^\.\//, ""));
+async function discoverSkillDirs(pluginRoot, relativeSkillsDir) {
+  const directory = path.join(pluginRoot, relativeSkillsDir.replace(/^\.\//, ""));
   if (!(await isDirectory(directory))) {
     return [];
   }
@@ -184,7 +182,7 @@ export async function computeBudgetProfile(target) {
     return computeSkillBudget(target.path);
   }
   if (target.kind === "plugin") {
-    const manifest = await readJson(path.join(target.path, ".codex-plugin", "plugin.json"));
+    const manifest = await readJson(path.join(target.path, ".kodik-plugin", "plugin.json"));
     return computePluginBudget(target.path, manifest);
   }
 

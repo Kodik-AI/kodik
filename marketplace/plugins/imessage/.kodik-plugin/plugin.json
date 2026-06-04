@@ -1,19 +1,22 @@
 {
-  "name": "imessage",
-  "description": "iMessage channel for your AI assistant — reads chat.db directly, sends via AppleScript. Built-in access control; manage pairing, allowlists, and policy via /imessage:access.",
+  "schemaVersion": 1,
+  "id": "imessage",
   "version": "0.1.0",
-  "keywords": [
+  "title": "imessage",
+  "description": "iMessage channel for your AI assistant — reads chat.db directly, sends via AppleScript. Built-in access control; manage pairing, allowlists, and policy via /imessage:access.",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/imessage",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/imessage",
+  "tags": [
     "imessage",
     "messaging",
     "channel",
     "mcp"
   ],
-  "id": "imessage",
-  "author": {
-    "name": "Kodik"
-  },
-  "sourceMarketplace": {
-    "slug": "claude-official",
-    "url": "https://github.com/anthropics/claude-plugins-official"
-  }
+  "prompts": [],
+  "userConfig": {}
 }

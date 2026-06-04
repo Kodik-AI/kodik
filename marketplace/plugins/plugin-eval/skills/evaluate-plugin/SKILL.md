@@ -5,7 +5,7 @@ description: Evaluate a local Codex plugin in engineer-friendly language. Use wh
 
 # Evaluate Plugin
 
-Use this skill when the target is a plugin root with `.codex-plugin/plugin.json`.
+Use this skill when the target is a plugin root with `.kodik-plugin/plugin.json`.
 
 ## Workflow
 

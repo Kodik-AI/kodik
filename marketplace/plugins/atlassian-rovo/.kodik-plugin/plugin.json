@@ -1,45 +1,21 @@
 {
-  "name": "atlassian-rovo",
+  "schemaVersion": 1,
+  "id": "atlassian-rovo",
   "version": "1.0.0",
+  "title": "Atlassian Rovo",
   "description": "Manage Jira and Confluence fast",
+  "category": "productivity",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "homepage": "https://www.atlassian.com",
-  "repository": "https://github.com/openai/plugins",
-  "license": "MIT",
-  "keywords": [
+  "homepageUrl": "https://www.atlassian.com",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/atlassian-rovo",
+  "tags": [
     "atlassian"
   ],
-  "skills": "./skills/",
-  "interface": {
-    "displayName": "Atlassian Rovo",
-    "shortDescription": "Manage Jira and Confluence fast",
-    "longDescription": "Manage Jira and Confluence fast",
-    "developerName": "Atlassian",
-    "category": "Productivity",
-    "capabilities": [
-      "Interactive",
-      "Write"
-    ],
-    "websiteURL": "https://www.atlassian.com",
-    "privacyPolicyURL": "https://www.atlassian.com/legal/privacy-policy",
-    "termsOfServiceURL": "https://www.atlassian.com/legal/cloud-terms-of-service",
-    "defaultPrompt": [
-      "Create Jira tasks in project Vita MVP"
-    ],
-    "screenshots": [],
-    "brandColor": "#0052CC",
-    "composerIcon": "./assets/app-icon.png",
-    "logo": "./assets/app-icon.png"
-  },
-  "id": "atlassian-rovo",
-  "originalAuthor": {
-    "name": "Atlassian",
-    "url": "https://www.atlassian.com"
-  },
-  "sourceMarketplace": {
-    "slug": "openai-codex",
-    "url": "https://github.com/openai/plugins"
-  }
+  "prompts": [
+    "Create Jira tasks in project Vita MVP"
+  ],
+  "userConfig": {}
 }

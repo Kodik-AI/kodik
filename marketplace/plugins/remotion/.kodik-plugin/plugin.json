@@ -1,14 +1,17 @@
 {
-  "name": "remotion",
+  "schemaVersion": 1,
+  "id": "remotion",
   "version": "1.0.0",
+  "title": "Remotion",
   "description": "Remotion video creation skills — best practices, animations, audio, captions, 3D, and more for building programmatic videos with React.",
+  "category": "design",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "homepage": "https://remotion.dev",
-  "repository": "https://github.com/remotion-dev/remotion",
-  "license": "MIT",
-  "keywords": [
+  "homepageUrl": "https://remotion.dev",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/remotion",
+  "tags": [
     "remotion",
     "video",
     "react",
@@ -19,38 +22,10 @@
     "captions",
     "audio"
   ],
-  "skills": "./skills/",
-  "interface": {
-    "displayName": "Remotion",
-    "shortDescription": "Create motion graphics from prompts",
-    "longDescription": "Build videos programmatically with Remotion and React. Covers animations, timing, audio, captions, 3D, transitions, charts, text effects, and more.",
-    "developerName": "Remotion",
-    "category": "Design",
-    "capabilities": [
-      "Read",
-      "Write"
-    ],
-    "websiteURL": "https://remotion.dev",
-    "privacyPolicyURL": "https://remotion.pro/privacy",
-    "termsOfServiceURL": "https://remotion.pro/terms",
-    "defaultPrompt": [
-      "Create an animated chart with 5 bars",
-      "Make an animated call-to-action subscribe button for our YouTube channel",
-      "Use Remotion to add captions and audio to a video composition."
-    ],
-    "screenshots": [],
-    "brandColor": "#0B84F3",
-    "composerIcon": "./assets/icon.png",
-    "logo": "./assets/logo.png"
-  },
-  "id": "remotion",
-  "originalAuthor": {
-    "name": "Remotion",
-    "email": "hi@remotion.dev",
-    "url": "https://remotion.dev"
-  },
-  "sourceMarketplace": {
-    "slug": "openai-codex",
-    "url": "https://github.com/openai/plugins"
-  }
+  "prompts": [
+    "Create an animated chart with 5 bars",
+    "Make an animated call-to-action subscribe button for our YouTube channel",
+    "Use Remotion to add captions and audio to a video composition."
+  ],
+  "userConfig": {}
 }

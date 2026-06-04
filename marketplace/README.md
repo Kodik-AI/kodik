@@ -13,6 +13,25 @@ marketplace/
       skills/, agents/, hooks/, .mcp.json, …
 ```
 
+Each plugin manifest is the single source of truth for plugin metadata and uses one flat shape:
+`schemaVersion`, `id`, `version`, `title`, `description`, `category`, `icon`,
+`author`, `homepageUrl`, `sourceUrl`, `tags`, `prompts`, and `userConfig`. Do not
+add import-only fields such as `originalAuthor`, `sourceMarketplace`, `keywords`,
+`repository`, `license`, or component path overrides. Icons must use the
+repository-local vector SVG path `./assets/app-icon.svg` and must not embed raster
+image data. If a plugin has MCP servers, put them in a root `.mcp.json` file using
+the top-level `servers` key plus `meta` entries for stable item ids.
+
+The root `marketplace.json` should only describe catalog membership and source
+location. For first-party plugins, each entry should be:
+
+```json
+{
+  "name": "plugin-id",
+  "source": "./plugins/plugin-id"
+}
+```
+
 ## Adding a plugin
 
 A plugin entry in `marketplace.json` describes how to fetch the plugin. Five source types are supported:

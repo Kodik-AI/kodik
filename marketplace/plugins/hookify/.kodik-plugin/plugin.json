@@ -1,16 +1,17 @@
 {
-  "name": "hookify",
+  "schemaVersion": 1,
+  "id": "hookify",
+  "version": "1.0.0",
+  "title": "hookify",
   "description": "Easily create hooks to prevent unwanted behaviors by analyzing conversation patterns",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "id": "hookify",
-  "originalAuthor": {
-    "name": "Anthropic",
-    "email": "support@anthropic.com"
-  },
-  "sourceMarketplace": {
-    "slug": "claude-official",
-    "url": "https://github.com/anthropics/claude-plugins-official"
-  }
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/hookify",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/hookify",
+  "tags": [],
+  "prompts": [],
+  "userConfig": {}
 }

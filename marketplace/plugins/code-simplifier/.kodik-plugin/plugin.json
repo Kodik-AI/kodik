@@ -1,17 +1,17 @@
 {
-  "name": "code-simplifier",
+  "schemaVersion": 1,
+  "id": "code-simplifier",
   "version": "1.0.0",
+  "title": "code-simplifier",
   "description": "Agent that simplifies and refines code for clarity, consistency, and maintainability while preserving functionality",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "id": "code-simplifier",
-  "originalAuthor": {
-    "name": "Anthropic",
-    "email": "support@anthropic.com"
-  },
-  "sourceMarketplace": {
-    "slug": "claude-official",
-    "url": "https://github.com/anthropics/claude-plugins-official"
-  }
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/code-simplifier",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/code-simplifier",
+  "tags": [],
+  "prompts": [],
+  "userConfig": {}
 }

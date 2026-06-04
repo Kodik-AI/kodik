@@ -6,7 +6,7 @@ Zoom connects Codex to Zoom meeting context through the Zoom app connector and p
 
 This repository is packaged as a Codex plugin:
 
-- plugin manifest: [`.codex-plugin/plugin.json`](.codex-plugin/plugin.json)
+- plugin manifest: [`.kodik-plugin/plugin.json`](.kodik-plugin/plugin.json)
 - Zoom app mapping: [`.app.json`](.app.json)
 - deterministic command workflows: [`commands/`](commands/)
 - focused reviewer agents: [`agents/`](agents/)

@@ -21,8 +21,9 @@ https://dashboard.render.com/u/*/settings#api-keys
 2. Add this to `~/.cursor/mcp.json` (replace `<YOUR_API_KEY>`):
 ```json
 {
-  "mcpServers": {
+  "servers": {
     "render": {
+      "type": "http",
       "url": "https://mcp.render.com/mcp",
       "headers": {
         "Authorization": "Bearer <YOUR_API_KEY>"
@@ -70,8 +71,9 @@ Add to your MCP config alongside the Render server:
 
 ```json
 {
-  "mcpServers": {
+  "servers": {
     "heroku": {
+      "type": "stdio",
       "command": "heroku",
       "args": ["mcp:start"]
     }

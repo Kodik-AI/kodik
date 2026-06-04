@@ -13,7 +13,7 @@ This directory packages the upstream [vercel/vercel-plugin](https://github.com/v
 
 ## Codex compatibility notes
 
-- The upstream repo ships `.plugin/plugin.json`; this import uses `.codex-plugin/plugin.json`.
+- The upstream repo ships `.plugin/plugin.json`; this import uses `.kodik-plugin/plugin.json`.
 - Skills use frontmatter metadata (`retrieval.aliases`, `intents`, `entities`, `pathPatterns`, `bashPatterns`) for Codex-native discovery — no hooks required.
 - The bundled `agents/` and `commands/` content is included from upstream for source parity.
 
@@ -104,7 +104,7 @@ After installing, skills are discovered automatically via Codex's metadata-based
 
 ```text
 vercel/
-├── .codex-plugin/plugin.json       # Plugin manifest
+├── .kodik-plugin/plugin.json       # Plugin manifest
 ├── .app.json                        # Connected Vercel app manifest
 ├── vercel.md                        # Ecosystem graph + conventions
 ├── skills/                          # 47 skills discovered via SKILL.md metadata

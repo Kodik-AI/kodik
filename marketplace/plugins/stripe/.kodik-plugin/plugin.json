@@ -1,40 +1,19 @@
 {
-  "name": "stripe",
+  "schemaVersion": 1,
+  "id": "stripe",
   "version": "1.0.0",
+  "title": "Stripe",
   "description": "Payments and business tools",
+  "category": "productivity",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "homepage": "https://stripe.com",
-  "repository": "https://github.com/openai/plugins",
-  "license": "MIT",
-  "keywords": [],
-  "skills": "./skills/",
-  "interface": {
-    "displayName": "Stripe",
-    "developerName": "Stripe",
-    "shortDescription": "Payments and business tools",
-    "longDescription": "Payments and business tools",
-    "category": "Productivity",
-    "capabilities": [],
-    "websiteURL": "https://stripe.com",
-    "privacyPolicyURL": "https://stripe.com/privacy",
-    "termsOfServiceURL": "https://stripe.com/legal/ssa",
-    "brandColor": "#635BFF",
-    "defaultPrompt": [
-      "Use Stripe to help with this task"
-    ],
-    "screenshots": [],
-    "composerIcon": "./assets/app-icon.png",
-    "logo": "./assets/app-icon.png"
-  },
-  "id": "stripe",
-  "originalAuthor": {
-    "name": "Stripe",
-    "url": "https://stripe.com"
-  },
-  "sourceMarketplace": {
-    "slug": "openai-codex",
-    "url": "https://github.com/openai/plugins"
-  }
+  "homepageUrl": "https://stripe.com",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/stripe",
+  "tags": [],
+  "prompts": [
+    "Use Stripe to help with this task"
+  ],
+  "userConfig": {}
 }

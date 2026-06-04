@@ -169,46 +169,85 @@ test("analyze accepts skills with block-scalar descriptions", async () => {
   assert.ok(result.summary.score > 0);
 });
 
-test("finds broken plugin manifests, missing paths, and prompt issues", async () => {
+test("finds broken plugin manifests and prompt issues", async () => {
   const tempDir = await makeTempDir("plugin-eval-plugin");
-  await fs.mkdir(path.join(tempDir, ".codex-plugin"), { recursive: true });
+  await fs.mkdir(path.join(tempDir, ".kodik-plugin"), { recursive: true });
   await fs.writeFile(
-    path.join(tempDir, ".codex-plugin", "plugin.json"),
+    path.join(tempDir, ".kodik-plugin", "plugin.json"),
     JSON.stringify(
       {
-        name: "bad-plugin",
+        schemaVersion: 1,
+        id: "bad-plugin",
         version: "0.1.0",
+        title: "Bad Plugin",
         description: "Broken plugin for testing.",
-        author: {
-          name: "Plugin Eval",
-          email: "support@example.com",
-          url: "https://example.com/",
-        },
-        homepage: "https://example.com/",
-        repository: "https://example.com/repo",
-        license: "MIT",
-        keywords: ["fixture"],
-        skills: "./missing-skills/",
-        interface: {
-          displayName: "Bad Plugin",
-          shortDescription: "Broken fixture",
-          longDescription: "Broken fixture for plugin-eval tests.",
-          developerName: "Plugin Eval",
-          category: "Coding",
-          capabilities: ["Interactive", "Write"],
-          websiteURL: "https://example.com/",
-          privacyPolicyURL: "https://example.com/privacy",
-          termsOfServiceURL: "https://example.com/terms",
-          defaultPrompt: [
-            "Prompt one that is fine.",
-            "Prompt two that is also fine.",
-            "Prompt three that is also fine.",
-            "Prompt four is ignored and should be flagged because there are too many starter prompts in this broken fixture, and this sentence is intentionally extended well past the interface length budget so the evaluator can deterministically flag it as too long."
-          ],
-          brandColor: "teal",
-          composerIcon: "./assets/missing.svg",
-          logo: "./assets/missing.svg",
-          screenshots: []
+        category: "coding",
+        icon: "./assets/app-icon.svg",
+        author: { name: "Kodik" },
+        homepageUrl: "https://example.com/",
+        sourceUrl: "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/bad-plugin",
+        tags: ["fixture"],
+        prompts: [
+          "Prompt one that is fine.",
+          "Prompt two that is also fine.",
+          "Prompt three that is also fine.",
+          "Prompt four is ignored and should be flagged because there are too many starter prompts in this broken fixture, and this sentence is intentionally extended well past the prompt length budget so the evaluator can deterministically flag it as too long."
+        ],
+        userConfig: {}
+      },
+      null,
+      2,
+    ),
+    "utf8",
+  );
+
+  const result = await analyzePath(tempDir);
+  const ids = new Set(result.checks.map((check) => check.id));
+
+  assert.ok(ids.has("manifest-icon-missing"));
+  assert.ok(ids.has("manifest-prompts-too-many"));
+  assert.ok(ids.has("manifest-prompts-too-long"));
+  assert.ok(ids.has("plugin-skills-missing"));
+});
+
+test("flags legacy plugin MCP file shape", async () => {
+  const tempDir = await makeTempDir("plugin-eval-mcp");
+  await fs.mkdir(path.join(tempDir, ".kodik-plugin"), { recursive: true });
+  await fs.writeFile(
+    path.join(tempDir, ".kodik-plugin", "plugin.json"),
+    JSON.stringify(
+      {
+        schemaVersion: 1,
+        id: "legacy-mcp-plugin",
+        version: "0.1.0",
+        title: "Legacy MCP Plugin",
+        description: "Fixture with legacy MCP config.",
+        category: "coding",
+        icon: "./assets/app-icon.svg",
+        author: { name: "Kodik" },
+        homepageUrl: "https://example.com/",
+        sourceUrl: "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/legacy-mcp-plugin",
+        tags: ["fixture"],
+        prompts: ["Use the legacy MCP fixture."],
+        userConfig: {},
+        mcpServers: "./.mcp.json",
+      },
+      null,
+      2,
+    ),
+    "utf8",
+  );
+  await fs.mkdir(path.join(tempDir, "assets"), { recursive: true });
+  await fs.writeFile(path.join(tempDir, "assets", "app-icon.svg"), "<svg></svg>", "utf8");
+  await fs.writeFile(
+    path.join(tempDir, ".mcp.json"),
+    JSON.stringify(
+      {
+        mcpServers: {
+          legacy: {
+            command: "node",
+            args: ["server.js"]
+          }
         }
       },
       null,
@@ -220,11 +259,48 @@ test("finds broken plugin manifests, missing paths, and prompt issues", async ()
   const result = await analyzePath(tempDir);
   const ids = new Set(result.checks.map((check) => check.id));
 
-  assert.ok(ids.has("skills-path-missing"));
-  assert.ok(ids.has("default-prompt-too-many"));
-  assert.ok(ids.has("default-prompt-too-long"));
-  assert.ok(ids.has("brand-color-invalid"));
-  assert.ok(ids.has("plugin-skills-missing"));
+  assert.ok(ids.has("plugin-mcp-uses-legacy-key"));
+  assert.ok(ids.has("plugin-mcp-missing-servers"));
+  assert.ok(ids.has("manifest-extra-mcpServers"));
+});
+
+test("flags raster-backed plugin SVG icons", async () => {
+  const tempDir = await makeTempDir("plugin-eval-icon");
+  await fs.mkdir(path.join(tempDir, ".kodik-plugin"), { recursive: true });
+  await fs.mkdir(path.join(tempDir, "assets"), { recursive: true });
+  await fs.writeFile(
+    path.join(tempDir, ".kodik-plugin", "plugin.json"),
+    JSON.stringify(
+      {
+        schemaVersion: 1,
+        id: "bad-icon-plugin",
+        version: "0.1.0",
+        title: "Bad Icon Plugin",
+        description: "Fixture with raster-backed icon.",
+        category: "coding",
+        icon: "./assets/app-icon.svg",
+        author: { name: "Kodik" },
+        homepageUrl: "https://example.com/",
+        sourceUrl: "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/bad-icon-plugin",
+        tags: ["fixture"],
+        prompts: ["Use the bad icon fixture."],
+        userConfig: {}
+      },
+      null,
+      2,
+    ),
+    "utf8",
+  );
+  await fs.writeFile(
+    path.join(tempDir, "assets", "app-icon.svg"),
+    '<svg xmlns="http://www.w3.org/2000/svg"><image href="data:image/png;base64,AAAA"/></svg>',
+    "utf8",
+  );
+
+  const result = await analyzePath(tempDir);
+  const ids = new Set(result.checks.map((check) => check.id));
+
+  assert.ok(ids.has("manifest-icon-embeds-raster"));
 });
 
 test("collects deterministic TypeScript and Python metrics", async () => {
@@ -718,16 +794,15 @@ test("CLI start command renders chat-first workflow suggestions", async () => {
 });
 
 test("shipped plugin surfaces advertise beginner chat prompts", async () => {
-  const manifest = JSON.parse(await fs.readFile(path.join(repoRoot, ".codex-plugin", "plugin.json"), "utf8"));
+  const manifest = JSON.parse(await fs.readFile(path.join(repoRoot, ".kodik-plugin", "plugin.json"), "utf8"));
   const umbrellaSkill = await fs.readFile(path.join(repoRoot, "skills", "plugin-eval", "SKILL.md"), "utf8");
   const readme = await fs.readFile(path.join(repoRoot, "README.md"), "utf8");
 
-  assert.match(manifest.interface.longDescription, /plugin-eval start/i);
-  assert.deepEqual(manifest.interface.defaultPrompt, [
+  assert.match(manifest.description, /beginner-friendly start command/i);
+  assert.deepEqual(manifest.prompts, [
     "Give me an analysis of the game studio plugin.",
     "Evaluate this plugin.",
-    "Why did this score that way?",
-    "What should I fix first?"
+    "Why did this score that way?"
   ]);
   assert.match(umbrellaSkill, /plugin-eval start <path> --request/);
   assert.match(umbrellaSkill, /analysis of the game dev skill/i);

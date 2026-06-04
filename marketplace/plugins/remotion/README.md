@@ -17,7 +17,7 @@ See the [official OpenAI Codex plugin docs](https://developers.openai.com/codex/
 ## Plugin structure
 
 ```
-.codex-plugin/
+.kodik-plugin/
   plugin.json          # Plugin manifest
 skills/
   remotion/            # Remotion best practices (animations, audio, etc.)

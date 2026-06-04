@@ -86,9 +86,7 @@ async function provisionPluginInstall(target, workspacePath) {
   const marketplacePath = path.join(workspacePath, ".agents", "plugins", "marketplace.json");
   const marketplace = {
     name: "plugin-eval-benchmark",
-    interface: {
-      displayName: "Plugin Eval Benchmark",
-    },
+    title: "Plugin Eval Benchmark",
     plugins: [
       {
         name: target.name,

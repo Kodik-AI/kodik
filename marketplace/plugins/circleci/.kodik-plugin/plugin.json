@@ -1,49 +1,25 @@
 {
-  "name": "circleci",
+  "schemaVersion": 1,
+  "id": "circleci",
   "version": "1.0.0",
+  "title": "CircleCI",
   "description": "Build, test, and deploy any application",
+  "category": "coding",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "homepage": "https://circleci.com",
-  "repository": "https://github.com/circleci-public/skills",
-  "license": "MIT",
-  "keywords": [
+  "homepageUrl": "https://circleci.com",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/circleci",
+  "tags": [
     "circleci",
     "ci/cd",
     "ci"
   ],
-  "skills": "./skills/",
-  "interface": {
-    "displayName": "CircleCI",
-    "shortDescription": "Build, test, and deploy any application",
-    "longDescription": "Bring testing, deployment, and CI best practices into Codex",
-    "developerName": "CircleCI",
-    "category": "Coding",
-    "capabilities": [
-      "Interactive",
-      "Write"
-    ],
-    "websiteURL": "https://circleci.com",
-    "privacyPolicyURL": "https://circleci.com/legal/privacy-policy",
-    "termsOfServiceURL": "https://circleci.com/legal/terms-of-service",
-    "defaultPrompt": [
-      "Review the CircleCI configuration for this project and suggest improvements",
-      "Diagnose and fix build failures for the current branch",
-      "Setup the Chunk cli for this project"
-    ],
-    "brandColor": "#049B4A",
-    "composerIcon": "./assets/logo.svg",
-    "logo": "./assets/logo.svg",
-    "screenshots": []
-  },
-  "id": "circleci",
-  "originalAuthor": {
-    "name": "CircleCI",
-    "url": "https://circleci.com"
-  },
-  "sourceMarketplace": {
-    "slug": "openai-codex",
-    "url": "https://github.com/openai/plugins"
-  }
+  "prompts": [
+    "Review the CircleCI configuration for this project and suggest improvements",
+    "Diagnose and fix build failures for the current branch",
+    "Setup the Chunk cli for this project"
+  ],
+  "userConfig": {}
 }

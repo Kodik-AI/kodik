@@ -1,14 +1,17 @@
 {
-  "name": "heygen",
+  "schemaVersion": 1,
+  "id": "heygen",
   "version": "2.2.0",
+  "title": "HeyGen",
   "description": "Create HeyGen avatar videos and personalized video messages. Build a persistent digital identity from a photo, then generate presenter-led videos with your digital twin.",
+  "category": "design",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "homepage": "https://heygen.com",
-  "repository": "https://github.com/heygen-com/skills",
-  "license": "MIT",
-  "keywords": [
+  "homepageUrl": "https://heygen.com",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/heygen",
+  "tags": [
     "heygen",
     "avatar",
     "identity",
@@ -20,35 +23,10 @@
     "ai-avatar",
     "avatar-video"
   ],
-  "skills": "./skills/",
-  "interface": {
-    "displayName": "HeyGen",
-    "shortDescription": "Avatar videos and personalized video messages",
-    "longDescription": "HeyGen Skills give your agent a face, a voice, and the ability to send video like a message. Use heygen-avatar to build a persistent digital identity from a photo and pick a voice, then heygen-video to generate identity-first presenter videos via the HeyGen v3 Video Agent pipeline (avatar resolution, aspect ratio correction, prompt engineering, and voice selection are handled automatically).",
-    "developerName": "HeyGen",
-    "category": "Design",
-    "capabilities": [
-      "Read",
-      "Write"
-    ],
-    "websiteURL": "https://heygen.com",
-    "defaultPrompt": [
-      "Create my HeyGen avatar from this photo",
-      "Make a 30-second intro video of myself",
-      "Send a video update to my team about this week's progress"
-    ],
-    "brandColor": "#0a0a0a",
-    "composerIcon": "./assets/icon.png",
-    "logo": "./assets/logo.png"
-  },
-  "id": "heygen",
-  "originalAuthor": {
-    "name": "HeyGen",
-    "email": "developers@heygen.com",
-    "url": "https://heygen.com"
-  },
-  "sourceMarketplace": {
-    "slug": "openai-codex",
-    "url": "https://github.com/openai/plugins"
-  }
+  "prompts": [
+    "Create my HeyGen avatar from this photo",
+    "Make a 30-second intro video of myself",
+    "Send a video update to my team about this week's progress"
+  ],
+  "userConfig": {}
 }

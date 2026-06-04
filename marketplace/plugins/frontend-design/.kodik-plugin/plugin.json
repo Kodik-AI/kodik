@@ -1,16 +1,17 @@
 {
-  "name": "frontend-design",
+  "schemaVersion": 1,
+  "id": "frontend-design",
+  "version": "1.0.0",
+  "title": "frontend-design",
   "description": "Frontend design skill for UI/UX implementation",
+  "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "id": "frontend-design",
-  "originalAuthor": {
-    "name": "Anthropic",
-    "email": "support@anthropic.com"
-  },
-  "sourceMarketplace": {
-    "slug": "claude-official",
-    "url": "https://github.com/anthropics/claude-plugins-official"
-  }
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/frontend-design",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/frontend-design",
+  "tags": [],
+  "prompts": [],
+  "userConfig": {}
 }

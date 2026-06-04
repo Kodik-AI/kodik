@@ -1,19 +1,24 @@
 {
-  "name": "slack",
+  "schemaVersion": 1,
+  "id": "slack",
   "version": "0.1.0",
+  "title": "Slack",
   "description": "Work with Slack using the configured Slack integration.",
+  "category": "productivity",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "homepage": "https://slack.com/",
-  "repository": "https://github.com/openai/plugins",
-  "license": "MIT",
-  "keywords": [
+  "homepageUrl": "https://slack.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/slack",
+  "tags": [
     "slack",
     "chat",
     "collaboration"
   ],
-  "skills": "./skills/",
+  "prompts": [
+    "Summarize unread activity, draft replies, or prepare updates"
+  ],
   "userConfig": {
     "bot_token": {
       "type": "string",
@@ -28,36 +33,5 @@
       "description": "Your Slack workspace ID, e.g. T01ABCDEF. Find it via your workspace URL or the Slack app's Basic Information page.",
       "required": true
     }
-  },
-  "interface": {
-    "displayName": "Slack",
-    "shortDescription": "Read and manage Slack",
-    "longDescription": "Use Slack to summarize channels, draft messages, and organize team conversations through the connected Slack integration.",
-    "developerName": "OpenAI",
-    "category": "Productivity",
-    "capabilities": [
-      "Interactive",
-      "Write"
-    ],
-    "websiteURL": "https://slack.com/",
-    "privacyPolicyURL": "https://slack.com/privacy-policy",
-    "termsOfServiceURL": "https://slack.com/terms-of-service/user",
-    "defaultPrompt": [
-      "Summarize unread activity, draft replies, or prepare updates"
-    ],
-    "brandColor": "#611F69",
-    "composerIcon": "./assets/app-icon.png",
-    "logo": "./assets/app-icon.png",
-    "screenshots": []
-  },
-  "id": "slack",
-  "originalAuthor": {
-    "name": "OpenAI",
-    "email": "support@openai.com",
-    "url": "https://openai.com/"
-  },
-  "sourceMarketplace": {
-    "slug": "openai-codex",
-    "url": "https://github.com/openai/plugins"
   }
 }

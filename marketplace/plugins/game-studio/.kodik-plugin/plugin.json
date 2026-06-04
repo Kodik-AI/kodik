@@ -1,14 +1,17 @@
 {
-  "name": "game-studio",
+  "schemaVersion": 1,
+  "id": "game-studio",
   "version": "0.1.0",
+  "title": "Game Studio",
   "description": "Design, prototype, and ship browser games with guided 2D and 3D workflows, asset pipelines, and playtesting support.",
+  "category": "coding",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
-  "homepage": "https://openai.com/",
-  "repository": "https://github.com/openai/plugins",
-  "license": "MIT",
-  "keywords": [
+  "homepageUrl": "https://openai.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/game-studio",
+  "tags": [
     "games",
     "phaser",
     "threejs",
@@ -19,36 +22,8 @@
     "sprites",
     "playtest"
   ],
-  "skills": "./skills/",
-  "interface": {
-    "displayName": "Game Studio",
-    "shortDescription": "Design, prototype, and ship browser games",
-    "longDescription": "Plan, prototype, and build browser games with guided workflows for gameplay systems, UI, asset pipelines, and playtesting across 2D and 3D projects.",
-    "developerName": "OpenAI",
-    "category": "Coding",
-    "capabilities": [
-      "Interactive",
-      "Write"
-    ],
-    "websiteURL": "https://openai.com/",
-    "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
-    "termsOfServiceURL": "https://openai.com/policies/terms-of-use/",
-    "defaultPrompt": [
-      "Design a browser game and plan the core loop"
-    ],
-    "brandColor": "#0F766E",
-    "composerIcon": "./assets/game-studio.svg",
-    "logo": "./assets/app-icon.png",
-    "screenshots": []
-  },
-  "id": "game-studio",
-  "originalAuthor": {
-    "name": "OpenAI",
-    "email": "support@openai.com",
-    "url": "https://openai.com/"
-  },
-  "sourceMarketplace": {
-    "slug": "openai-codex",
-    "url": "https://github.com/openai/plugins"
-  }
+  "prompts": [
+    "Design a browser game and plan the core loop"
+  ],
+  "userConfig": {}
 }
