@@ -15,5 +15,13 @@
   "prompts": [
     "Triage or update relevant issues for this task with clear next actions"
   ],
-  "userConfig": {}
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Linear API key",
+      "description": "Create a personal API key at https://linear.app/settings/account/security.",
+      "sensitive": true,
+      "required": true
+    }
+  }
 }

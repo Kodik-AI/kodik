@@ -21,5 +21,13 @@
   "prompts": [
     "Generate a realistic farm using FLUX.1"
   ],
-  "userConfig": {}
+  "userConfig": {
+    "token": {
+      "type": "string",
+      "title": "Hugging Face access token",
+      "description": "Create a token at https://huggingface.co/settings/tokens. A read token is enough for most tools; use write to manage Spaces.",
+      "sensitive": true,
+      "required": true
+    }
+  }
 }

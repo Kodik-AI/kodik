@@ -2,14 +2,17 @@
   "servers": {
     "cloudflare-api": {
       "type": "http",
-      "url": "https://mcp.cloudflare.com/mcp"
+      "url": "https://mcp.cloudflare.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_token}"
+      }
     }
   },
   "meta": {
     "cloudflare-api": {
       "id": "cloudflare-api",
       "title": "Cloudflare API",
-      "description": "Official Cloudflare API MCP server. Uses OAuth on first connection, with optional bearer-token auth for automation."
+      "description": "Official Cloudflare API MCP server. Authenticate with a Cloudflare API token."
     }
   }
 }

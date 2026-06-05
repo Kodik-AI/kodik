@@ -2,14 +2,17 @@
   "servers": {
     "neon": {
       "type": "streamableHttp",
-      "url": "https://mcp.neon.tech/mcp"
+      "url": "https://mcp.neon.tech/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_key}"
+      }
     }
   },
   "meta": {
     "neon": {
       "id": "neon-mcp",
       "title": "neon",
-      "description": "Neon's official remote MCP. Sign in with your Neon account to manage projects, databases, and branches."
+      "description": "Neon's official remote MCP. Authenticate with a Neon API key to manage projects, databases, and branches."
     }
   }
 }

@@ -22,5 +22,13 @@
   "prompts": [
     "Use Neon to create a new Serverless Postgres database for my project and help me connect to it."
   ],
-  "userConfig": {}
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Neon API key",
+      "description": "Create an API key at https://console.neon.tech/app/settings/api-keys (shown only once).",
+      "sensitive": true,
+      "required": true
+    }
+  }
 }

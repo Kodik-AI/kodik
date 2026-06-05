@@ -26,5 +26,13 @@
   "prompts": [
     "Help me choose the right Cloudflare product, configure Wrangler, and use Cloudflare MCP to inspect or deploy this project"
   ],
-  "userConfig": {}
+  "userConfig": {
+    "api_token": {
+      "type": "string",
+      "title": "Cloudflare API token",
+      "description": "Create a token at https://dash.cloudflare.com/profile/api-tokens. Account-scoped tokens need the 'Account Resources: Read' permission; tokens with IP filtering are not supported.",
+      "sensitive": true,
+      "required": true
+    }
+  }
 }

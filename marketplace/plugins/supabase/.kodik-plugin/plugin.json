@@ -23,5 +23,13 @@
     "Review my Supabase schema and RLS policies for security issues.",
     "Optimize my Postgres queries and indexes using Supabase best practices."
   ],
-  "userConfig": {}
+  "userConfig": {
+    "access_token": {
+      "type": "string",
+      "title": "Supabase personal access token",
+      "description": "Create a token at https://supabase.com/dashboard/account/tokens. Optionally scope it via the server URL query params, e.g. ?project_ref=<id>&read_only=true.",
+      "sensitive": true,
+      "required": true
+    }
+  }
 }

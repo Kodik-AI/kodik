@@ -15,5 +15,13 @@
   "prompts": [
     "Use Stripe to help with this task"
   ],
-  "userConfig": {}
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Stripe API key",
+      "description": "Create a restricted key at https://dashboard.stripe.com/apikeys. A secret key also works but grants full access.",
+      "sensitive": true,
+      "required": true
+    }
+  }
 }

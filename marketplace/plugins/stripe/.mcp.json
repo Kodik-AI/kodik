@@ -2,14 +2,17 @@
   "servers": {
     "stripe": {
       "type": "streamableHttp",
-      "url": "https://mcp.stripe.com/"
+      "url": "https://mcp.stripe.com/",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_key}"
+      }
     }
   },
   "meta": {
     "stripe": {
       "id": "stripe-mcp",
       "title": "stripe",
-      "description": "Stripe's official remote MCP. Sign in with your Stripe account."
+      "description": "Stripe's official remote MCP. Authenticate with a Stripe API key."
     }
   }
 }
