@@ -53,6 +53,20 @@ with this shape:
 - `commands/`, `hooks.json`, `scripts/`, and `ui/`
   - example convention directories kept alongside the imported workflow bundle
 
+## Connecting Figma
+
+The plugin connects to Figma's desktop MCP server at
+`http://127.0.0.1:3845/mcp`. It needs the Figma desktop app (macOS or Windows)
+and a Dev or Full seat on a paid plan. To turn it on, open a Design file in the
+desktop app, switch to Dev Mode (Shift+D), and in the MCP server section of the
+right sidebar click Enable desktop MCP server.
+
+The desktop server covers reading designs (`get_design_context`,
+`get_screenshot`, `get_metadata`, Code Connect, variables). Writing to the
+canvas (`use_figma`, `create_new_file`) is only on Figma's remote server
+`https://mcp.figma.com/mcp`, which admits only clients in the Figma MCP
+catalog. Kodik will switch to it once it is listed there.
+
 ## Notes
 
 This plugin is app-backed through `.app.json` and uses the connected Figma

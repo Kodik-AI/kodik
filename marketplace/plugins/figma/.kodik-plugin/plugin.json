@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "figma",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "title": "Figma",
   "description": "Figma workflows for design implementation, Code Connect templates, and design system rule generation.",
   "category": "design",

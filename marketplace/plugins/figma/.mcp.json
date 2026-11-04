@@ -2,14 +2,14 @@
   "servers": {
     "figma": {
       "type": "http",
-      "url": "https://mcp.figma.com/mcp"
+      "url": "http://127.0.0.1:3845/mcp"
     }
   },
   "meta": {
     "figma": {
       "id": "figma-mcp",
       "title": "figma",
-      "description": "Figma's official remote MCP. Sign in with your Figma account."
+      "description": "Figma's desktop MCP server, served by the Figma desktop app. Enable it in Dev Mode: MCP server > Enable desktop MCP server. No sign-in needed."
     }
   }
 }
