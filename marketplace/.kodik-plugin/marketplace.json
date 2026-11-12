@@ -322,6 +322,15 @@
     {
       "name": "teaching",
       "source": "./plugins/teaching"
+    },
+    {
+      "name": "nodelusion",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/alexeikrivilev-cyber/Nodelusion.git",
+        "path": "plugin-template",
+        "ref": "master"
+      }
     }
   ]
 }
