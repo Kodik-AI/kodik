@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "pdf",
+  "version": "0.1.0",
+  "title": "PDF",
+  "description": "Work with PDF files: extract text and tables, merge, split, reorder, rotate and watermark pages, fill forms, protect with a password, and generate new PDFs with Unicode fonts.",
+  "category": "productivity",
+  "icon": "./assets/app-icon.svg",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/pdf",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/pdf",
+  "tags": [
+    "pdf",
+    "documents",
+    "forms",
+    "ocr",
+    "office"
+  ],
+  "prompts": [
+    "Extract the tables from statement.pdf into CSV files",
+    "Merge cover.pdf with pages 2-10 of report.pdf and add a DRAFT watermark",
+    "Fill in form.pdf with the details from data.json"
+  ],
+  "userConfig": {}
+}

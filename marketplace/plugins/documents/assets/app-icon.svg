@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Documents icon">
+  <title>Documents</title>
+  <desc>A text page with a folded corner.</desc>
+  <rect width="64" height="64" rx="14" fill="#1F2937"/>
+  <path d="M20 12h17l11 11v27a2 2 0 0 1-2 2H20a2 2 0 0 1-2-2V14a2 2 0 0 1 2-2Z" fill="#fff"/>
+  <path d="M37 12v9a2 2 0 0 0 2 2h9Z" fill="#1F2937" opacity="0.35"/>
+  <path d="M24 30h18M24 36h18M24 42h12" stroke="#1F2937" stroke-width="3" stroke-linecap="round"/>
+</svg>
