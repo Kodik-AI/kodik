@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "documents",
+  "version": "0.1.0",
+  "title": "Documents",
+  "description": "Create, read and edit Word documents (.docx): reports, letters and contracts with real styles, tables, headers and page numbers, find-and-replace that keeps formatting, and conversion to PDF.",
+  "category": "productivity",
+  "icon": "./assets/app-icon.svg",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/documents",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/documents",
+  "tags": [
+    "word",
+    "docx",
+    "documents",
+    "reports",
+    "office"
+  ],
+  "prompts": [
+    "Write a two-page project proposal as proposal.docx with a title, headings, a budget table and page numbers",
+    "Replace the client name and date in contract.docx without changing its formatting",
+    "Summarize report.docx and list every table it contains"
+  ],
+  "userConfig": {}
+}
