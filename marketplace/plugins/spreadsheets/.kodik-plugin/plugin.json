@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "spreadsheets",
+  "version": "0.1.0",
+  "title": "Spreadsheets",
+  "description": "Create, analyze and edit Excel workbooks and CSV files: live formulas, number formats, tables, charts and validation, with a formula check that finds broken references and error results.",
+  "category": "productivity",
+  "icon": "./assets/app-icon.svg",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/spreadsheets",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/spreadsheets",
+  "tags": [
+    "excel",
+    "xlsx",
+    "csv",
+    "spreadsheets",
+    "data",
+    "office"
+  ],
+  "prompts": [
+    "Build budget.xlsx with monthly inputs, formulas for totals and a chart of spending by category",
+    "Clean up export.csv and turn it into a formatted Excel table",
+    "Check model.xlsx for broken formulas and explain what each sheet calculates"
+  ],
+  "userConfig": {}
+}
