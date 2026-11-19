@@ -366,6 +366,22 @@
     {
       "name": "exa",
       "source": "./plugins/exa"
+    },
+    {
+      "name": "documents",
+      "source": "./plugins/documents"
+    },
+    {
+      "name": "spreadsheets",
+      "source": "./plugins/spreadsheets"
+    },
+    {
+      "name": "presentations",
+      "source": "./plugins/presentations"
+    },
+    {
+      "name": "pdf",
+      "source": "./plugins/pdf"
     }
   ]
 }
