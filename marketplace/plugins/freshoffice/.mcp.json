@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "freshoffice": {
+      "type": "streamableHttp",
+      "url": "https://mcp.freshoffice.ru/mcp"
+    }
+  },
+  "meta": {
+    "freshoffice": {
+      "id": "freshoffice-mcp",
+      "title": "freshoffice",
+      "description": "FreshOffice's official remote MCP server. Sign in with your FreshOffice account."
+    }
+  }
+}

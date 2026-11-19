@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "freshoffice",
+  "version": "0.1.0",
+  "title": "FreshOffice CRM",
+  "description": "Search and update FreshOffice CRM clients, deals and tasks from your AI assistant. Sign in with your FreshOffice account.",
+  "category": "productivity",
+  "icon": "./assets/app-icon.svg",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://freshoffice.ru/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/freshoffice",
+  "tags": [
+    "freshoffice",
+    "crm",
+    "sales"
+  ],
+  "prompts": [
+    "Summarize my open FreshOffice deals and the next step for each"
+  ],
+  "userConfig": {}
+}

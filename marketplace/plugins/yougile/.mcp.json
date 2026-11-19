@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "yougile": {
+      "type": "streamableHttp",
+      "url": "https://ru.yougile.com/data/ai/mcp"
+    }
+  },
+  "meta": {
+    "yougile": {
+      "id": "yougile-mcp",
+      "title": "yougile",
+      "description": "YouGile's official remote MCP server. Sign in with your YouGile account."
+    }
+  }
+}
