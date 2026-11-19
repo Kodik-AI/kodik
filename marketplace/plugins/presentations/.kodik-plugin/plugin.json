@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "presentations",
+  "version": "0.1.0",
+  "title": "Presentations",
+  "description": "Create, read and edit PowerPoint decks (.pptx): slides from layouts and placeholders, native charts, tables, images and speaker notes, using your own template when you have one.",
+  "category": "productivity",
+  "icon": "./assets/app-icon.svg",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/presentations",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/presentations",
+  "tags": [
+    "powerpoint",
+    "pptx",
+    "slides",
+    "presentations",
+    "office"
+  ],
+  "prompts": [
+    "Turn notes.md into a ten-slide deck with speaker notes",
+    "Build a deck from brand.pptx with one slide per quarter and a revenue chart",
+    "Update every slide in deck.pptx from FY2025 to FY2026 and add notes to slide 3"
+  ],
+  "userConfig": {}
+}

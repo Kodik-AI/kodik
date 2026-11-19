@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Presentations icon">
+  <title>Presentations</title>
+  <desc>A slide on a stand showing a bar chart.</desc>
+  <rect width="64" height="64" rx="14" fill="#1F2937"/>
+  <rect x="11" y="13" width="42" height="29" rx="3" fill="#fff"/>
+  <path d="M32 42v8M24 52l8-4 8 4" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M20 36v-6M28 36V24M36 36v-9M44 36V20" stroke="#1F2937" stroke-width="4" stroke-linecap="round"/>
+</svg>
