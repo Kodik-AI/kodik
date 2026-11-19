@@ -22,13 +22,5 @@
   "prompts": [
     "Inspect PRs, triage issues, debug failing checks, and prepare code changes for review"
   ],
-  "userConfig": {
-    "personal_access_token": {
-      "type": "string",
-      "title": "GitHub personal access token",
-      "description": "Create a fine-grained token at https://github.com/settings/personal-access-tokens with access to the repositories you want the assistant to use.",
-      "sensitive": true,
-      "required": true
-    }
-  }
+  "userConfig": {}
 }
