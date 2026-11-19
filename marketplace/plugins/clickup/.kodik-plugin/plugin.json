@@ -5,6 +5,7 @@
   "title": "ClickUp",
   "description": "Find, create and update ClickUp tasks, lists and docs.",
   "category": "productivity",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },

@@ -5,6 +5,7 @@
   "title": "Mixpanel",
   "description": "Query Mixpanel events, funnels and retention to answer product questions.",
   "category": "productivity",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },

@@ -5,6 +5,7 @@
   "title": "Grafana Cloud",
   "description": "Search Grafana Cloud dashboards, query metrics and logs, and inspect alerts.",
   "category": "coding",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },

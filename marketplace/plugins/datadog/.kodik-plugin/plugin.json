@@ -5,6 +5,7 @@
   "title": "Datadog",
   "description": "Query Datadog logs, metrics, traces, monitors and incidents from your AI assistant.",
   "category": "coding",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
