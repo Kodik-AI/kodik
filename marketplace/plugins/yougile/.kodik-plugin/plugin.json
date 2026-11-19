@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "yougile",
+  "version": "0.1.0",
+  "title": "YouGile",
+  "description": "Work with YouGile boards, tasks and chats from your AI assistant. Sign in with your YouGile account.",
+  "category": "productivity",
+  "icon": "./assets/app-icon.svg",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://ru.yougile.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/yougile",
+  "tags": [
+    "yougile",
+    "tasks",
+    "project-management",
+    "kanban"
+  ],
+  "prompts": [
+    "Show my overdue YouGile tasks and draft a status update"
+  ],
+  "userConfig": {}
+}

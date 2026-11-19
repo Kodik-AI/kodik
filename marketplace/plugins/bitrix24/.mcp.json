@@ -1,0 +1,24 @@
+{
+  "servers": {
+    "bitrix24": {
+      "type": "streamableHttp",
+      "url": "https://mcp.bitrix24.com/mcp/"
+    },
+    "bitrix24-docs": {
+      "type": "streamableHttp",
+      "url": "https://mcp-dev.bitrix24.com/mcp"
+    }
+  },
+  "meta": {
+    "bitrix24": {
+      "id": "bitrix24-mcp",
+      "title": "bitrix24",
+      "description": "Bitrix24's official remote MCP server for your portal. Sign in with your Bitrix24 account."
+    },
+    "bitrix24-docs": {
+      "id": "bitrix24-docs-mcp",
+      "title": "bitrix24-docs",
+      "description": "Bitrix24's official REST API documentation server. No sign-in needed."
+    }
+  }
+}

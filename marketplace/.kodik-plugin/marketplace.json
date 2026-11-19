@@ -366,6 +366,18 @@
     {
       "name": "exa",
       "source": "./plugins/exa"
+    },
+    {
+      "name": "yougile",
+      "source": "./plugins/yougile"
+    },
+    {
+      "name": "freshoffice",
+      "source": "./plugins/freshoffice"
+    },
+    {
+      "name": "bitrix24",
+      "source": "./plugins/bitrix24"
     }
   ]
 }
