@@ -5,6 +5,7 @@
   "title": "Amplitude",
   "description": "Explore Amplitude charts, events and user behavior to answer product questions.",
   "category": "productivity",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },

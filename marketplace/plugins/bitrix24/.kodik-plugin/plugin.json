@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "bitrix24",
+  "version": "0.1.0",
+  "title": "Bitrix24",
+  "description": "Work with your Bitrix24 portal (CRM, tasks, chats) and look up Bitrix24 REST API docs from your AI assistant. Portal access needs a plan with AI and external AI tools enabled by your administrator.",
+  "category": "productivity",
+  "icon": "./assets/app-icon.svg",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://www.bitrix24.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/bitrix24",
+  "tags": [
+    "bitrix24",
+    "crm",
+    "tasks",
+    "api-docs"
+  ],
+  "prompts": [
+    "Find the Bitrix24 REST method for creating a CRM deal and show an example call"
+  ],
+  "userConfig": {}
+}

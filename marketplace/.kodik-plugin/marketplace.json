@@ -160,24 +160,8 @@
       "source": "./plugins/github"
     },
     {
-      "name": "gmail",
-      "source": "./plugins/gmail"
-    },
-    {
-      "name": "google-calendar",
-      "source": "./plugins/google-calendar"
-    },
-    {
-      "name": "google-drive",
-      "source": "./plugins/google-drive"
-    },
-    {
       "name": "heygen",
       "source": "./plugins/heygen"
-    },
-    {
-      "name": "hubspot",
-      "source": "./plugins/hubspot"
     },
     {
       "name": "hugging-face",
@@ -212,14 +196,6 @@
       "source": "./plugins/developers"
     },
     {
-      "name": "outlook-calendar",
-      "source": "./plugins/outlook-calendar"
-    },
-    {
-      "name": "outlook-email",
-      "source": "./plugins/outlook-email"
-    },
-    {
       "name": "plugin-eval",
       "source": "./plugins/plugin-eval"
     },
@@ -236,10 +212,6 @@
       "source": "./plugins/sentry"
     },
     {
-      "name": "sharepoint",
-      "source": "./plugins/sharepoint"
-    },
-    {
       "name": "slack",
       "source": "./plugins/slack"
     },
@@ -254,10 +226,6 @@
     {
       "name": "superpowers",
       "source": "./plugins/superpowers"
-    },
-    {
-      "name": "teams",
-      "source": "./plugins/teams"
     },
     {
       "name": "temporal",
@@ -366,6 +334,18 @@
     {
       "name": "exa",
       "source": "./plugins/exa"
+    },
+    {
+      "name": "yougile",
+      "source": "./plugins/yougile"
+    },
+    {
+      "name": "freshoffice",
+      "source": "./plugins/freshoffice"
+    },
+    {
+      "name": "bitrix24",
+      "source": "./plugins/bitrix24"
     },
     {
       "name": "documents",

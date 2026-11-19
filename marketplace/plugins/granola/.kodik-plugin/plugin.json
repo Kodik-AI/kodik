@@ -5,6 +5,7 @@
   "title": "Granola",
   "description": "Search your Granola meeting notes and transcripts.",
   "category": "productivity",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
