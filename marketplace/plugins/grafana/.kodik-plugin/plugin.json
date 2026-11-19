@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "grafana",
+  "version": "0.1.0",
+  "title": "Grafana Cloud",
+  "description": "Search Grafana Cloud dashboards, query metrics and logs, and inspect alerts.",
+  "category": "coding",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://grafana.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/grafana",
+  "tags": [
+    "grafana",
+    "observability",
+    "dashboards",
+    "prometheus",
+    "loki"
+  ],
+  "prompts": [
+    "Check the Grafana dashboards for latency spikes around the last deploy"
+  ],
+  "userConfig": {}
+}

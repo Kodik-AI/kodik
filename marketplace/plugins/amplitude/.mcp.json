@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "amplitude": {
+      "type": "streamableHttp",
+      "url": "https://mcp.amplitude.com/mcp"
+    }
+  },
+  "meta": {
+    "amplitude": {
+      "id": "amplitude-mcp",
+      "title": "amplitude",
+      "description": "Amplitude's official remote MCP (US data center). Sign in with your Amplitude account."
+    }
+  }
+}

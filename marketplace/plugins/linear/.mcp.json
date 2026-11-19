@@ -1,10 +1,10 @@
 {
   "servers": {
     "linear": {
-      "type": "sse",
-      "url": "https://mcp.linear.app/sse",
+      "type": "streamableHttp",
+      "url": "https://mcp.linear.app/mcp",
       "headers": {
-        "Authorization": "Bearer ${user_config.api_key}"
+        "Authorization": "Bearer ${user_config.api_key:-}"
       }
     }
   },
@@ -12,7 +12,7 @@
     "linear": {
       "id": "linear-mcp",
       "title": "linear",
-      "description": "Linear's official remote MCP. Authenticate with a Linear API key."
+      "description": "Linear's official remote MCP. Sign in with your Linear account, or use an API token."
     }
   }
 }

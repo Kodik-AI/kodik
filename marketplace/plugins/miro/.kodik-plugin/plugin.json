@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "miro",
+  "version": "0.1.0",
+  "title": "Miro",
+  "description": "Read Miro boards and create diagrams, sticky notes and frames.",
+  "category": "design",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://miro.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/miro",
+  "tags": [
+    "miro",
+    "whiteboard",
+    "diagrams",
+    "boards"
+  ],
+  "prompts": [
+    "Turn this architecture into a diagram on a new Miro board"
+  ],
+  "userConfig": {}
+}

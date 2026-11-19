@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "granola",
+  "version": "0.1.0",
+  "title": "Granola",
+  "description": "Search your Granola meeting notes and transcripts.",
+  "category": "productivity",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://www.granola.ai/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/granola",
+  "tags": [
+    "granola",
+    "meetings",
+    "notes",
+    "transcripts"
+  ],
+  "prompts": [
+    "Find the decisions and action items from this week's meetings in Granola"
+  ],
+  "userConfig": {}
+}

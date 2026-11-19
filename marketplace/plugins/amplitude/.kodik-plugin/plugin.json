@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "amplitude",
+  "version": "0.1.0",
+  "title": "Amplitude",
+  "description": "Explore Amplitude charts, events and user behavior to answer product questions.",
+  "category": "productivity",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://amplitude.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/amplitude",
+  "tags": [
+    "amplitude",
+    "analytics",
+    "product-analytics",
+    "events"
+  ],
+  "prompts": [
+    "Show how the signup funnel changed in Amplitude over the last 30 days"
+  ],
+  "userConfig": {}
+}

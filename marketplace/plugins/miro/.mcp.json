@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "miro": {
+      "type": "streamableHttp",
+      "url": "https://mcp.miro.com/"
+    }
+  },
+  "meta": {
+    "miro": {
+      "id": "miro-mcp",
+      "title": "miro",
+      "description": "Miro's official remote MCP. Sign in with your Miro account."
+    }
+  }
+}

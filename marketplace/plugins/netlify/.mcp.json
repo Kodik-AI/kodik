@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "netlify": {
+      "type": "streamableHttp",
+      "url": "https://mcp.netlify.com/mcp"
+    }
+  },
+  "meta": {
+    "netlify": {
+      "id": "netlify-mcp",
+      "title": "netlify",
+      "description": "Netlify's official remote MCP. Sign in with your Netlify account to manage sites, deploys and environment variables."
+    }
+  }
+}

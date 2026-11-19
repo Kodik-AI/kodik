@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "gitlab": {
+      "type": "streamableHttp",
+      "url": "https://gitlab.com/api/v4/mcp"
+    }
+  },
+  "meta": {
+    "gitlab": {
+      "id": "gitlab-mcp",
+      "title": "gitlab",
+      "description": "GitLab's official MCP server on GitLab.com. Sign in with your GitLab account."
+    }
+  }
+}

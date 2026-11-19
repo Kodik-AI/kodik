@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "pylon",
+  "version": "0.1.0",
+  "title": "Pylon",
+  "description": "Look up and update customer issues and accounts in Pylon.",
+  "category": "productivity",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://www.usepylon.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/pylon",
+  "tags": [
+    "pylon",
+    "support",
+    "customer-issues",
+    "tickets"
+  ],
+  "prompts": [
+    "Find the Pylon issues related to this bug and summarize what customers reported"
+  ],
+  "userConfig": {}
+}

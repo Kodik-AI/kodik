@@ -4,7 +4,7 @@
       "type": "streamableHttp",
       "url": "https://mcp.stripe.com/",
       "headers": {
-        "Authorization": "Bearer ${user_config.api_key}"
+        "Authorization": "Bearer ${user_config.api_key:-}"
       }
     }
   },
@@ -12,7 +12,7 @@
     "stripe": {
       "id": "stripe-mcp",
       "title": "stripe",
-      "description": "Stripe's official remote MCP. Authenticate with a Stripe API key."
+      "description": "Stripe's official remote MCP. Sign in with your Stripe account, or use an API token."
     }
   }
 }

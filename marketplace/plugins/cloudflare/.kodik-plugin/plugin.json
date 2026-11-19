@@ -30,9 +30,9 @@
     "api_token": {
       "type": "string",
       "title": "Cloudflare API token",
-      "description": "Create a token at https://dash.cloudflare.com/profile/api-tokens. Account-scoped tokens need the 'Account Resources: Read' permission; tokens with IP filtering are not supported.",
+      "description": "Create a token at https://dash.cloudflare.com/profile/api-tokens. Account-scoped tokens need the 'Account Resources: Read' permission; tokens with IP filtering are not supported. Optional: leave empty to sign in with your Cloudflare account instead.",
       "sensitive": true,
-      "required": true
+      "required": false
     }
   }
 }

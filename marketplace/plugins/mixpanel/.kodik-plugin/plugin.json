@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "mixpanel",
+  "version": "0.1.0",
+  "title": "Mixpanel",
+  "description": "Query Mixpanel events, funnels and retention to answer product questions.",
+  "category": "productivity",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://mixpanel.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/mixpanel",
+  "tags": [
+    "mixpanel",
+    "analytics",
+    "events",
+    "funnels"
+  ],
+  "prompts": [
+    "Check in Mixpanel whether the new onboarding step changed activation"
+  ],
+  "userConfig": {}
+}

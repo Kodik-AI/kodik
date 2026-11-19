@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "pylon": {
+      "type": "streamableHttp",
+      "url": "https://mcp.usepylon.com/"
+    }
+  },
+  "meta": {
+    "pylon": {
+      "id": "pylon-mcp",
+      "title": "pylon",
+      "description": "Pylon's official remote MCP. Sign in with your Pylon account."
+    }
+  }
+}
