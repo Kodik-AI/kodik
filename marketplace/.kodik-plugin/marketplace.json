@@ -366,6 +366,10 @@
     {
       "name": "exa",
       "source": "./plugins/exa"
+    },
+    {
+      "name": "asana",
+      "source": "./plugins/asana"
     }
   ]
 }

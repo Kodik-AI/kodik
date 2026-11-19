@@ -1,0 +1,18 @@
+{
+  "servers": {
+    "asana": {
+      "type": "streamableHttp",
+      "url": "https://mcp.asana.com/v2/mcp",
+      "auth": {
+        "clientId": "REPLACE_WITH_ASANA_CLIENT_ID"
+      }
+    }
+  },
+  "meta": {
+    "asana": {
+      "id": "asana-mcp",
+      "title": "asana",
+      "description": "Asana's official remote MCP server. Sign in with your Asana account."
+    }
+  }
+}

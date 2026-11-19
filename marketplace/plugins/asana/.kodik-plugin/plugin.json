@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "asana",
+  "version": "0.1.0",
+  "title": "Asana",
+  "description": "Find, create and update Asana tasks, projects and goals from your AI assistant.",
+  "category": "productivity",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://asana.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/asana",
+  "tags": [
+    "asana",
+    "tasks",
+    "project-management"
+  ],
+  "prompts": [
+    "Create Asana tasks for the TODOs in this branch and assign them to me"
+  ],
+  "userConfig": {}
+}

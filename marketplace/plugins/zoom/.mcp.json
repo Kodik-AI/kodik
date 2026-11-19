@@ -1,0 +1,18 @@
+{
+  "servers": {
+    "zoom": {
+      "type": "streamableHttp",
+      "url": "https://mcp.zoom.us/mcp/zoom/streamable",
+      "auth": {
+        "clientId": "REPLACE_WITH_ZOOM_PUBLIC_CLIENT_ID"
+      }
+    }
+  },
+  "meta": {
+    "zoom": {
+      "id": "zoom-mcp",
+      "title": "zoom",
+      "description": "Zoom's official remote MCP server. Sign in with your Zoom account to search meetings, recordings, notes and docs."
+    }
+  }
+}
