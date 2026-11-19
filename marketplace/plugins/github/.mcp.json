@@ -2,17 +2,14 @@
   "servers": {
     "github": {
       "type": "streamableHttp",
-      "url": "https://api.githubcopilot.com/mcp/",
-      "headers": {
-        "Authorization": "Bearer ${user_config.personal_access_token}"
-      }
+      "url": "https://api.githubcopilot.com/mcp/"
     }
   },
   "meta": {
     "github": {
       "id": "github-mcp",
       "title": "github",
-      "description": "GitHub's official remote MCP server. Authenticate with a GitHub personal access token."
+      "description": "GitHub's official remote MCP server. Sign in with your GitHub account."
     }
   }
 }
