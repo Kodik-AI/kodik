@@ -1,15 +1,10 @@
 {
   "servers": {
     "slack": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-slack"
-      ],
-      "env": {
-        "SLACK_BOT_TOKEN": "${user_config.bot_token}",
-        "SLACK_TEAM_ID": "${user_config.team_id}"
+      "type": "streamableHttp",
+      "url": "https://mcp.slack.com/mcp",
+      "auth": {
+        "clientId": "12659611310020.12650647800725"
       }
     }
   },
@@ -17,7 +12,7 @@
     "slack": {
       "id": "slack-mcp",
       "title": "slack",
-      "description": "Community Slack MCP. Create a bot at https://api.slack.com/apps and paste its bot token + team ID."
+      "description": "Slack's official remote MCP server. Sign in with your Slack account."
     }
   }
 }
