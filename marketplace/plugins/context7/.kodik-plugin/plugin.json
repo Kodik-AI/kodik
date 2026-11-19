@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "context7",
+  "version": "0.1.0",
+  "title": "Context7",
+  "description": "Pull current, version-specific library documentation and code examples into the conversation.",
+  "category": "developer-tools",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://context7.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/context7",
+  "tags": [
+    "context7",
+    "documentation",
+    "libraries",
+    "api-reference"
+  ],
+  "prompts": [
+    "Look up the current docs for the library this file imports before changing the code"
+  ],
+  "userConfig": {}
+}

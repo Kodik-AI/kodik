@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "clickup": {
+      "type": "streamableHttp",
+      "url": "https://mcp.clickup.com/mcp"
+    }
+  },
+  "meta": {
+    "clickup": {
+      "id": "clickup-mcp",
+      "title": "clickup",
+      "description": "ClickUp's official remote MCP. Sign in with your ClickUp account."
+    }
+  }
+}

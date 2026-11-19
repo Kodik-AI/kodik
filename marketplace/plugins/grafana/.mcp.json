@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "grafana": {
+      "type": "streamableHttp",
+      "url": "https://mcp.grafana.com/mcp"
+    }
+  },
+  "meta": {
+    "grafana": {
+      "id": "grafana-mcp",
+      "title": "grafana",
+      "description": "Grafana's official remote MCP for Grafana Cloud. Sign in with your Grafana account."
+    }
+  }
+}

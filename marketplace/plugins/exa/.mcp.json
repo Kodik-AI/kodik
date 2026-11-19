@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "exa": {
+      "type": "streamableHttp",
+      "url": "https://mcp.exa.ai/mcp"
+    }
+  },
+  "meta": {
+    "exa": {
+      "id": "exa-mcp",
+      "title": "exa",
+      "description": "Exa's official remote MCP. Works without an account; sign in to use your own Exa plan."
+    }
+  }
+}

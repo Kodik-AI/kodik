@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "clickup",
+  "version": "0.1.0",
+  "title": "ClickUp",
+  "description": "Find, create and update ClickUp tasks, lists and docs.",
+  "category": "productivity",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://clickup.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/clickup",
+  "tags": [
+    "clickup",
+    "tasks",
+    "project-management",
+    "docs"
+  ],
+  "prompts": [
+    "Create ClickUp tasks for the TODOs in this branch and link them to the right list"
+  ],
+  "userConfig": {}
+}

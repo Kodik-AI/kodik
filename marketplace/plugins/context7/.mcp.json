@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "context7": {
+      "type": "streamableHttp",
+      "url": "https://mcp.context7.com/mcp"
+    }
+  },
+  "meta": {
+    "context7": {
+      "id": "context7-mcp",
+      "title": "context7",
+      "description": "Context7's official remote MCP. Works without an account; sign in for higher rate limits."
+    }
+  }
+}

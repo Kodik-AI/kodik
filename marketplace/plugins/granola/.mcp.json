@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "granola": {
+      "type": "streamableHttp",
+      "url": "https://mcp.granola.ai/mcp"
+    }
+  },
+  "meta": {
+    "granola": {
+      "id": "granola-mcp",
+      "title": "granola",
+      "description": "Granola's official remote MCP. Sign in with your Granola account."
+    }
+  }
+}

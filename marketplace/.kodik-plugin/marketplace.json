@@ -322,6 +322,50 @@
     {
       "name": "teaching",
       "source": "./plugins/teaching"
+    },
+    {
+      "name": "datadog",
+      "source": "./plugins/datadog"
+    },
+    {
+      "name": "amplitude",
+      "source": "./plugins/amplitude"
+    },
+    {
+      "name": "context7",
+      "source": "./plugins/context7"
+    },
+    {
+      "name": "gitlab",
+      "source": "./plugins/gitlab"
+    },
+    {
+      "name": "granola",
+      "source": "./plugins/granola"
+    },
+    {
+      "name": "pylon",
+      "source": "./plugins/pylon"
+    },
+    {
+      "name": "clickup",
+      "source": "./plugins/clickup"
+    },
+    {
+      "name": "miro",
+      "source": "./plugins/miro"
+    },
+    {
+      "name": "grafana",
+      "source": "./plugins/grafana"
+    },
+    {
+      "name": "mixpanel",
+      "source": "./plugins/mixpanel"
+    },
+    {
+      "name": "exa",
+      "source": "./plugins/exa"
     }
   ]
 }

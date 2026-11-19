@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "gitlab",
+  "version": "0.1.0",
+  "title": "GitLab",
+  "description": "Work with GitLab projects, issues, merge requests and pipelines on GitLab.com.",
+  "category": "coding",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://about.gitlab.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/gitlab",
+  "tags": [
+    "gitlab",
+    "merge-requests",
+    "issues",
+    "pipelines",
+    "ci"
+  ],
+  "prompts": [
+    "Review the open merge requests assigned to me on GitLab and summarize what each needs"
+  ],
+  "userConfig": {}
+}

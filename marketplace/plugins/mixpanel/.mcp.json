@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "mixpanel": {
+      "type": "streamableHttp",
+      "url": "https://mcp.mixpanel.com/mcp"
+    }
+  },
+  "meta": {
+    "mixpanel": {
+      "id": "mixpanel-mcp",
+      "title": "mixpanel",
+      "description": "Mixpanel's official remote MCP (US data residency). Sign in with your Mixpanel account."
+    }
+  }
+}

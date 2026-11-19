@@ -1,0 +1,15 @@
+{
+  "servers": {
+    "datadog": {
+      "type": "streamableHttp",
+      "url": "https://mcp.datadoghq.com/v1/mcp"
+    }
+  },
+  "meta": {
+    "datadog": {
+      "id": "datadog-mcp",
+      "title": "datadog",
+      "description": "Datadog's official remote MCP (US1 site). Sign in with your Datadog account."
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "exa",
+  "version": "0.1.0",
+  "title": "Exa",
+  "description": "Search the web and fetch page contents with Exa for research and up-to-date answers.",
+  "category": "research",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://exa.ai/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/exa",
+  "tags": [
+    "exa",
+    "web-search",
+    "research",
+    "crawling"
+  ],
+  "prompts": [
+    "Search the web with Exa for recent changes to this API and summarize them"
+  ],
+  "userConfig": {}
+}

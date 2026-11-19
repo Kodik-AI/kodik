@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "datadog",
+  "version": "0.1.0",
+  "title": "Datadog",
+  "description": "Query Datadog logs, metrics, traces, monitors and incidents from your AI assistant.",
+  "category": "coding",
+  "author": {
+    "name": "Kodik"
+  },
+  "homepageUrl": "https://www.datadoghq.com/",
+  "sourceUrl": "https://github.com/Kodik-AI/kodik/tree/main/marketplace/plugins/datadog",
+  "tags": [
+    "datadog",
+    "observability",
+    "logs",
+    "metrics",
+    "incidents"
+  ],
+  "prompts": [
+    "Find the errors behind the latest Datadog monitor alert and suggest a fix"
+  ],
+  "userConfig": {}
+}
