@@ -5,6 +5,7 @@
   "title": "GitLab",
   "description": "Work with GitLab projects, issues, merge requests and pipelines on GitLab.com.",
   "category": "coding",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },

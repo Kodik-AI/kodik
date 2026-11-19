@@ -5,6 +5,7 @@
   "title": "Pylon",
   "description": "Look up and update customer issues and accounts in Pylon.",
   "category": "productivity",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },

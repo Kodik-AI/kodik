@@ -5,6 +5,7 @@
   "title": "Context7",
   "description": "Pull current, version-specific library documentation and code examples into the conversation.",
   "category": "developer-tools",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },

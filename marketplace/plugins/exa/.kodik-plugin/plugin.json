@@ -5,6 +5,7 @@
   "title": "Exa",
   "description": "Search the web and fetch page contents with Exa for research and up-to-date answers.",
   "category": "research",
+  "icon": "./assets/app-icon.svg",
   "author": {
     "name": "Kodik"
   },
