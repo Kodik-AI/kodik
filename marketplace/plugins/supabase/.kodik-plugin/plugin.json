@@ -27,9 +27,9 @@
     "access_token": {
       "type": "string",
       "title": "Supabase personal access token",
-      "description": "Create a token at https://supabase.com/dashboard/account/tokens. Optionally scope it via the server URL query params, e.g. ?project_ref=<id>&read_only=true.",
+      "description": "Create a token at https://supabase.com/dashboard/account/tokens. Optionally scope it via the server URL query params, e.g. ?project_ref=<id>&read_only=true. Optional: leave empty to sign in with your Supabase account instead.",
       "sensitive": true,
-      "required": true
+      "required": false
     }
   }
 }

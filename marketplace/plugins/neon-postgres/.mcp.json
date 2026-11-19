@@ -4,7 +4,7 @@
       "type": "streamableHttp",
       "url": "https://mcp.neon.tech/mcp",
       "headers": {
-        "Authorization": "Bearer ${user_config.api_key}"
+        "Authorization": "Bearer ${user_config.api_key:-}"
       }
     }
   },
@@ -12,7 +12,7 @@
     "neon": {
       "id": "neon-mcp",
       "title": "neon",
-      "description": "Neon's official remote MCP. Authenticate with a Neon API key to manage projects, databases, and branches."
+      "description": "Neon's official remote MCP. Sign in with your Neon account, or use an API token."
     }
   }
 }

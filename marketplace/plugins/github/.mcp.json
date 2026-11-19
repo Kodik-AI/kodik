@@ -1,14 +1,10 @@
 {
   "servers": {
     "github": {
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-github"
-      ],
-      "env": {
-        "GITHUB_PERSONAL_ACCESS_TOKEN": "${user_config.personal_access_token}"
+      "type": "streamableHttp",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer ${user_config.personal_access_token}"
       }
     }
   },
@@ -16,7 +12,7 @@
     "github": {
       "id": "github-mcp",
       "title": "github",
-      "description": "Community MCP server for github. Sign in with a personal access token at https://github.com/settings/tokens."
+      "description": "GitHub's official remote MCP server. Authenticate with a GitHub personal access token."
     }
   }
 }

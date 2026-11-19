@@ -19,9 +19,9 @@
     "api_key": {
       "type": "string",
       "title": "Linear API key",
-      "description": "Create a personal API key at https://linear.app/settings/account/security.",
+      "description": "Create a personal API key at https://linear.app/settings/account/security. Optional: leave empty to sign in with your Linear account instead.",
       "sensitive": true,
-      "required": true
+      "required": false
     }
   }
 }

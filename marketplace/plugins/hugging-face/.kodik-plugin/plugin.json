@@ -25,9 +25,9 @@
     "token": {
       "type": "string",
       "title": "Hugging Face access token",
-      "description": "Create a token at https://huggingface.co/settings/tokens. A read token is enough for most tools; use write to manage Spaces.",
+      "description": "Create a token at https://huggingface.co/settings/tokens. A read token is enough for most tools; use write to manage Spaces. Optional: leave empty to sign in with your Hugging Face account instead.",
       "sensitive": true,
-      "required": true
+      "required": false
     }
   }
 }
